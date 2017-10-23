@@ -85,7 +85,7 @@ namespace MeiLian.Web.Startup
             //Swagger - Enable this line and the related lines in Configure method to enable swagger UI
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new Info { Title = "AbpZeroTemplate API", Version = "v1" });
+                options.SwaggerDoc("v1", new Info { Title = "MeiLian API", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
             });
 
@@ -103,7 +103,7 @@ namespace MeiLian.Web.Startup
             //});
 
             //Configure Abp and Dependency Injection
-            return services.AddAbp<AbpZeroTemplateWebHostModule>(options =>
+            return services.AddAbp<MeiLianWebHostModule>(options =>
             {
                 //Configure Log4Net logging
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
@@ -174,7 +174,7 @@ namespace MeiLian.Web.Startup
             // Enable middleware to serve swagger-ui assets (HTML, JS, CSS etc.)
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "AbpZeroTemplate API V1");
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "MeiLian API V1");
             }); //URL: /swagger
         }
 
@@ -182,7 +182,7 @@ namespace MeiLian.Web.Startup
         private static void ConfigureOwinServices(IAppBuilder app)
         {
             GlobalHost.DependencyResolver.Register(typeof(IAssemblyLocator), () => new SignalRAssemblyLocator());
-            app.Properties["host.AppName"] = "AbpZeroTemplate";
+            app.Properties["host.AppName"] = "MeiLian";
 
             app.UseAbp();
             app.UseAesDataProtectorProvider();

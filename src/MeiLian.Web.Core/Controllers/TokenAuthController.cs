@@ -40,7 +40,7 @@ using MeiLian.Web.Authentication.External;
 namespace MeiLian.Web.Controllers
 {
     [Route("api/[controller]/[action]")]
-    public class TokenAuthController : AbpZeroTemplateControllerBase
+    public class TokenAuthController : MeiLianControllerBase
     {
         private const string UserIdentifierClaimType = "http://aspnetzero.com/claims/useridentifier";
 

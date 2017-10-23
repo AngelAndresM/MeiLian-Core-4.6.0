@@ -15,7 +15,7 @@ using MeiLian.Editions.Dto;
 namespace MeiLian.Editions
 {
     [AbpAuthorize(AppPermissions.Pages_Editions)]
-    public class EditionAppService : AbpZeroTemplateAppServiceBase, IEditionAppService
+    public class EditionAppService : MeiLianAppServiceBase, IEditionAppService
     {
         private readonly EditionManager _editionManager;
         private readonly IRepository<SubscribableEdition> _subscribableEditionRepository;

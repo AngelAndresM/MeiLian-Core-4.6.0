@@ -20,7 +20,7 @@ using Abp.Linq.Extensions;
 
 namespace MeiLian.MultiTenancy.Payments
 {
-    public class PaymentAppService : AbpZeroTemplateAppServiceBase, IPaymentAppService
+    public class PaymentAppService : MeiLianAppServiceBase, IPaymentAppService
     {
         private readonly ISubscriptionPaymentRepository _subscriptionPaymentRepository;
         private readonly EditionManager _editionManager;

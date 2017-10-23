@@ -6,7 +6,7 @@ namespace MeiLian.Tests
     {
         public MultiTenantTheoryAttribute()
         {
-            if (!AbpZeroTemplateConsts.MultiTenancyEnabled)
+            if (!MeiLianConsts.MultiTenancyEnabled)
             {
                 Skip = "MultiTenancy is disabled.";
             }

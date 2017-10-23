@@ -15,7 +15,7 @@ using MeiLian.Authorization.Impersonation;
 
 namespace MeiLian.Authorization.Users
 {
-    public class UserLinkManager : AbpZeroTemplateDomainServiceBase, IUserLinkManager
+    public class UserLinkManager : MeiLianDomainServiceBase, IUserLinkManager
     {
         private readonly IRepository<UserAccount, long> _userAccountRepository;
         private readonly ICacheManager _cacheManager;

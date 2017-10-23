@@ -10,7 +10,7 @@ using MeiLian.MultiTenancy.Payments;
 
 namespace MeiLian.MultiTenancy.HostDashboard
 {
-    public class IncomeStatisticsService : AbpZeroTemplateDomainServiceBase, IIncomeStatisticsService
+    public class IncomeStatisticsService : MeiLianDomainServiceBase, IIncomeStatisticsService
     {
         private readonly IRepository<SubscriptionPayment, long> _subscriptionPaymentRepository;
 

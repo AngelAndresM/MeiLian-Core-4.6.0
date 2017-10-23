@@ -8,7 +8,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize]
-    public class NotificationsController : AbpZeroTemplateControllerBase
+    public class NotificationsController : MeiLianControllerBase
     {
         private readonly INotificationAppService _notificationApp;
 

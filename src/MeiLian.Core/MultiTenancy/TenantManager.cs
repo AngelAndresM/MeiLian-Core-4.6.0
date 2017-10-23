@@ -195,7 +195,7 @@ namespace MeiLian.MultiTenancy
                 return;
             }
 
-            var error = LocalizationManager.GetSource(AbpZeroTemplateConsts.LocalizationSourceName).GetString("FreeEditionsCannotHaveTrialVersions");
+            var error = LocalizationManager.GetSource(MeiLianConsts.LocalizationSourceName).GetString("FreeEditionsCannotHaveTrialVersions");
             throw new UserFriendlyException(error);
         }
 

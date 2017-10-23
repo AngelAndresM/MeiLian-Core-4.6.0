@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 
 namespace MeiLian.MultiTenancy.Payments.Paypal
 {
-    public class PayPalGatewayManager : AbpZeroTemplateServiceBase, IPaymentGatewayManager, ITransientDependency
+    public class PayPalGatewayManager : MeiLianServiceBase, IPaymentGatewayManager, ITransientDependency
     {
         private readonly PayPalConfiguration _configuration;
 

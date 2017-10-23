@@ -7,7 +7,7 @@ using MeiLian.MultiTenancy;
 
 namespace MeiLian.Notifications
 {
-    public class AppNotifier : AbpZeroTemplateDomainServiceBase, IAppNotifier
+    public class AppNotifier : MeiLianDomainServiceBase, IAppNotifier
     {
         private readonly INotificationPublisher _notificationPublisher;
 
@@ -31,7 +31,7 @@ namespace MeiLian.Notifications
             var notificationData = new LocalizableMessageNotificationData(
                 new LocalizableString(
                     "NewUserRegisteredNotificationMessage",
-                    AbpZeroTemplateConsts.LocalizationSourceName
+                    MeiLianConsts.LocalizationSourceName
                     )
                 );
 
@@ -46,7 +46,7 @@ namespace MeiLian.Notifications
             var notificationData = new LocalizableMessageNotificationData(
                 new LocalizableString(
                     "NewTenantRegisteredNotificationMessage",
-                    AbpZeroTemplateConsts.LocalizationSourceName
+                    MeiLianConsts.LocalizationSourceName
                     )
                 );
 

@@ -9,7 +9,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Administration_Host_Maintenance)]
-    public class MaintenanceController : AbpZeroTemplateControllerBase
+    public class MaintenanceController : MeiLianControllerBase
     {
         private readonly ICachingAppService _cachingAppService;
 

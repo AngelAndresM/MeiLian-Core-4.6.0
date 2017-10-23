@@ -9,7 +9,7 @@ using MeiLian.Caching.Dto;
 namespace MeiLian.Caching
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Host_Maintenance)]
-    public class CachingAppService : AbpZeroTemplateAppServiceBase, ICachingAppService
+    public class CachingAppService : MeiLianAppServiceBase, ICachingAppService
     {
         private readonly ICacheManager _cacheManager;
 

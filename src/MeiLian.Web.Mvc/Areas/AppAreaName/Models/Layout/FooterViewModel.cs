@@ -8,7 +8,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Models.Layout
 
         public string GetProductNameWithEdition()
         {
-            const string productName = "AbpZeroTemplate";
+            const string productName = "MeiLian";
 
             if (LoginInformations.Tenant == null)
             {

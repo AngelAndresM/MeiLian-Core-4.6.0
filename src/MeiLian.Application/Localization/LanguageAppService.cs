@@ -17,7 +17,7 @@ using MeiLian.Localization.Dto;
 namespace MeiLian.Localization
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Languages)]
-    public class LanguageAppService : AbpZeroTemplateAppServiceBase, ILanguageAppService
+    public class LanguageAppService : MeiLianAppServiceBase, ILanguageAppService
     {
         private readonly IApplicationLanguageManager _applicationLanguageManager;
         private readonly IApplicationLanguageTextManager _applicationLanguageTextManager;

@@ -10,11 +10,11 @@ namespace MeiLian.Migrations.Seed.Host
     {
         public static List<ApplicationLanguage> InitialLanguages => GetInitialLanguages();
 
-        private readonly AbpZeroTemplateDbContext _context;
+        private readonly MeiLianDbContext _context;
 
         private static List<ApplicationLanguage> GetInitialLanguages()
         {
-            var tenantId = AbpZeroTemplateConsts.MultiTenancyEnabled ? null : (int?)1;
+            var tenantId = MeiLianConsts.MultiTenancyEnabled ? null : (int?)1;
             return new List<ApplicationLanguage>
             {
                 new ApplicationLanguage(tenantId, "en", "English", "famfamfam-flags gb"),
@@ -31,7 +31,7 @@ namespace MeiLian.Migrations.Seed.Host
             };
         }
 
-        public DefaultLanguagesCreator(AbpZeroTemplateDbContext context)
+        public DefaultLanguagesCreator(MeiLianDbContext context)
         {
             _context = context;
         }

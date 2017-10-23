@@ -4,7 +4,7 @@ using MeiLian.Web.Session;
 
 namespace MeiLian.Web.Views.Shared.Components.AccountLogo
 {
-    public class AccountLogoViewComponent : AbpZeroTemplateViewComponent
+    public class AccountLogoViewComponent : MeiLianViewComponent
     {
         private readonly IPerRequestSessionCache _sessionCache;
 

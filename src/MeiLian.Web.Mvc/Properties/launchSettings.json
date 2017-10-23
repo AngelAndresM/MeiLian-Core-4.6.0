@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "MyCompanyName.AbpZeroTemplate.Web": {
+    "MeiLian.Web": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "http://localhost:62114",

@@ -2,8 +2,8 @@
 @using Abp.Application.Services.Dto
 @using Abp.Extensions
 @using Abp.Timing;
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Startup
-@model MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.HostSettings.HostSettingsViewModel
+@using MeiLian.Web.Areas.AppAreaName.Startup
+@model MeiLian.Web.Areas.AppAreaName.Models.HostSettings.HostSettingsViewModel
 @{
     ViewBag.CurrentPageName = AppAreaNamePageNames.Host.Settings;
 }
@@ -341,7 +341,7 @@
             <div class="tab-pane" id="SettingsEmailSmtpTab">
                 <form id="EmailSmtpSettingsForm">
                     <div class="form-group form-md-line-input form-md-floating-label no-hint">
-                        <input type="email" name="DefaultFromAddress" class="form-control@(Model.Settings.Email.DefaultFromAddress.IsNullOrEmpty() ? "" : " edited")" value="@Model.Settings.Email.DefaultFromAddress" maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxEmailAddressLength">
+                        <input type="email" name="DefaultFromAddress" class="form-control@(Model.Settings.Email.DefaultFromAddress.IsNullOrEmpty() ? "" : " edited")" value="@Model.Settings.Email.DefaultFromAddress" maxlength="@MeiLian.Authorization.Users.User.MaxEmailAddressLength">
                         <label>@L("DefaultFromAddress")</label>
                     </div>
 

@@ -1,8 +1,8 @@
 ﻿@using Abp.Application.Services.Dto
 @using Abp.Authorization.Users
 @using Abp.Timing;
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Common.Modals
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Profile
+@using MeiLian.Web.Areas.AppAreaName.Models.Common.Modals
+@using MeiLian.Web.Areas.AppAreaName.Models.Profile
 @model MySettingsViewModel
 
 @Html.Partial("~/Areas/AppAreaName/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("MySettings")))
@@ -45,7 +45,7 @@
                     <div class="form-group form-md-line-input form-md-floating-label no-hint">
                         <div class="input-group">
                             <div class="input-group-control">
-                                <input type="text" name="PhoneNumber" class="form-control edited" value="@Model.PhoneNumber" maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxPhoneNumberLength">
+                                <input type="text" name="PhoneNumber" class="form-control edited" value="@Model.PhoneNumber" maxlength="@MeiLian.Authorization.Users.User.MaxPhoneNumberLength">
                                 <label>@L("PhoneNumber")</label>
                             </div>
                             @if (!Model.IsPhoneNumberConfirmed)
@@ -70,7 +70,7 @@
                 else
                 {
                     <div class="form-group form-md-line-input form-md-floating-label no-hint">
-                            <input type="text" name="PhoneNumber" class="form-control edited" value="@Model.PhoneNumber" maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxPhoneNumberLength">
+                            <input type="text" name="PhoneNumber" class="form-control edited" value="@Model.PhoneNumber" maxlength="@MeiLian.Authorization.Users.User.MaxPhoneNumberLength">
                             <label>@L("PhoneNumber") </label>
                     </div>
                 }

@@ -40,7 +40,7 @@ namespace MeiLian
 #endif
         typeof(AbpAutoMapperModule),
         typeof(AbpMailKitModule))]
-    public class AbpZeroTemplateCoreModule : AbpModule
+    public class MeiLianCoreModule : AbpModule
     {
         public override void PreInitialize()
         {
@@ -51,7 +51,7 @@ namespace MeiLian
             Configuration.Modules.Zero().EntityTypes.Role = typeof(Role);
             Configuration.Modules.Zero().EntityTypes.User = typeof(User);
 
-            AbpZeroTemplateLocalizationConfigurer.Configure(Configuration.Localization);
+            MeiLianLocalizationConfigurer.Configure(Configuration.Localization);
 
             //Adding feature providers
             Configuration.Features.Providers.Add<AppFeatureProvider>();
@@ -63,7 +63,7 @@ namespace MeiLian
             Configuration.Notifications.Providers.Add<AppNotificationProvider>();
 
             //Enable this line to create a multi-tenant application.
-            Configuration.MultiTenancy.IsEnabled = AbpZeroTemplateConsts.MultiTenancyEnabled;
+            Configuration.MultiTenancy.IsEnabled = MeiLianConsts.MultiTenancyEnabled;
             
             //Enable LDAP authentication (It can be enabled only if MultiTenancy is disabled!)
             //Configuration.Modules.ZeroLdap().Enable(typeof(AppLdapAuthenticationSource));
@@ -81,7 +81,7 @@ namespace MeiLian
             {
                 Configuration.IocManager.IocContainer.Register(
                     Component.For<IEmailSenderConfiguration, ISmtpEmailSenderConfiguration>()
-                             .ImplementedBy<AbpZeroTemplateSmtpEmailSenderConfiguration>()
+                             .ImplementedBy<MeiLianSmtpEmailSenderConfiguration>()
                              .LifestyleTransient()
                 );
             });
@@ -93,13 +93,13 @@ namespace MeiLian
 
             Configuration.Caching.Configure(PaymentCacheItem.CacheName, cache =>
             {
-                cache.DefaultSlidingExpireTime = TimeSpan.FromMinutes(AbpZeroTemplateConsts.PaymentCacheDurationInMinutes);
+                cache.DefaultSlidingExpireTime = TimeSpan.FromMinutes(MeiLianConsts.PaymentCacheDurationInMinutes);
             });
         }
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateCoreModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(MeiLianCoreModule).GetAssembly());
         }
 
         public override void PostInitialize()

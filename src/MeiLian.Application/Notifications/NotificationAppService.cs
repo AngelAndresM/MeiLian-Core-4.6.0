@@ -13,7 +13,7 @@ using MeiLian.Notifications.Dto;
 namespace MeiLian.Notifications
 {
     [AbpAuthorize]
-    public class NotificationAppService : AbpZeroTemplateAppServiceBase, INotificationAppService
+    public class NotificationAppService : MeiLianAppServiceBase, INotificationAppService
     {
         private readonly INotificationDefinitionManager _notificationDefinitionManager;
         private readonly IUserNotificationManager _userNotificationManager;

@@ -9,10 +9,10 @@ namespace MeiLian.Tests.TestDatas
 
     public class TestSubscriptionPaymentBuilder
     {
-        private readonly AbpZeroTemplateDbContext _context;
+        private readonly MeiLianDbContext _context;
         private readonly int _tenantId;
 
-        public TestSubscriptionPaymentBuilder(AbpZeroTemplateDbContext context, int tenantId)
+        public TestSubscriptionPaymentBuilder(MeiLianDbContext context, int tenantId)
         {
             _context = context;
             _tenantId = tenantId;

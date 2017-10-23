@@ -15,7 +15,7 @@ namespace MeiLian.Web.IdentityServer
                 .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServerConfig.GetApiResources())
                 .AddInMemoryClients(IdentityServerConfig.GetClients(configuration))
-                .AddAbpPersistedGrants<AbpZeroTemplateDbContext>()
+                .AddAbpPersistedGrants<MeiLianDbContext>()
                 .AddAbpIdentityServer<User>();
         }
     }

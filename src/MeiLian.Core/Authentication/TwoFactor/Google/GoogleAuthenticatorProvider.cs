@@ -6,7 +6,7 @@ using MeiLian.Authorization.Users;
 
 namespace MeiLian.Authentication.TwoFactor.Google
 {
-    public class GoogleAuthenticatorProvider : AbpZeroTemplateServiceBase, IUserTwoFactorTokenProvider<User>, ITransientDependency
+    public class GoogleAuthenticatorProvider : MeiLianServiceBase, IUserTwoFactorTokenProvider<User>, ITransientDependency
     {
         private readonly GoogleTwoFactorAuthenticateService _googleTwoFactorAuthenticateService;
 

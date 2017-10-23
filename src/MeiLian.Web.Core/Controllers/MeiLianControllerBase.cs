@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Identity;
 
 namespace MeiLian.Web.Controllers
 {
-    public abstract class AbpZeroTemplateControllerBase : AbpController
+    public abstract class MeiLianControllerBase : AbpController
     {
-        protected AbpZeroTemplateControllerBase()
+        protected MeiLianControllerBase()
         {
-            LocalizationSourceName = AbpZeroTemplateConsts.LocalizationSourceName;
+            LocalizationSourceName = MeiLianConsts.LocalizationSourceName;
         }
 
         protected void CheckErrors(IdentityResult identityResult)

@@ -4,7 +4,7 @@ using MeiLian.Web.Session;
 
 namespace MeiLian.Web.Views.Shared.Components.TenantChange
 {
-    public class TenantChangeViewComponent : AbpZeroTemplateViewComponent
+    public class TenantChangeViewComponent : MeiLianViewComponent
     {
         private readonly IPerRequestSessionCache _sessionCache;
 

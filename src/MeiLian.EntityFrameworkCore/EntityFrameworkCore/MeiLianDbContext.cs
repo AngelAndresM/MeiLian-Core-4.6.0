@@ -13,7 +13,7 @@ using MeiLian.Storage;
 
 namespace MeiLian.EntityFrameworkCore
 {
-    public class AbpZeroTemplateDbContext : AbpZeroDbContext<Tenant, Role, User, AbpZeroTemplateDbContext>, IAbpPersistedGrantDbContext
+    public class MeiLianDbContext : AbpZeroDbContext<Tenant, Role, User, MeiLianDbContext>, IAbpPersistedGrantDbContext
     {
         /* Define an IDbSet for each entity of the application */
 
@@ -31,7 +31,7 @@ namespace MeiLian.EntityFrameworkCore
 
         public DbSet<PersistedGrantEntity> PersistedGrants { get; set; }
 
-        public AbpZeroTemplateDbContext(DbContextOptions<AbpZeroTemplateDbContext> options)
+        public MeiLianDbContext(DbContextOptions<MeiLianDbContext> options)
             : base(options)
         {
 

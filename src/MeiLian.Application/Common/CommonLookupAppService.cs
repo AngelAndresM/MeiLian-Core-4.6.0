@@ -14,7 +14,7 @@ using MeiLian.Editions.Dto;
 namespace MeiLian.Common
 {
     [AbpAuthorize]
-    public class CommonLookupAppService : AbpZeroTemplateAppServiceBase, ICommonLookupAppService
+    public class CommonLookupAppService : MeiLianAppServiceBase, ICommonLookupAppService
     {
         private readonly EditionManager _editionManager;
 

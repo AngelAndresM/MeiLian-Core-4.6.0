@@ -13,7 +13,7 @@ using MeiLian.Friendships.Dto;
 namespace MeiLian.Friendships
 {
     [AbpAuthorize]
-    public class FriendshipAppService : AbpZeroTemplateAppServiceBase, IFriendshipAppService
+    public class FriendshipAppService : MeiLianAppServiceBase, IFriendshipAppService
     {
         private readonly IFriendshipManager _friendshipManager;
         private readonly IOnlineClientManager _onlineClientManager;

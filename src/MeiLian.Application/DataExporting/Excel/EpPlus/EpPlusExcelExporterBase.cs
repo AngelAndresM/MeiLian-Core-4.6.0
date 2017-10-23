@@ -9,7 +9,7 @@ using OfficeOpenXml;
 
 namespace MeiLian.DataExporting.Excel.EpPlus
 {
-    public abstract class EpPlusExcelExporterBase : AbpZeroTemplateServiceBase, ITransientDependency
+    public abstract class EpPlusExcelExporterBase : MeiLianServiceBase, ITransientDependency
     {
         public IAppFolders AppFolders { get; set; }
 

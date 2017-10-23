@@ -39,7 +39,7 @@ namespace MeiLian.Web.Public.Startup
             IdentityRegistrar.Register(services);
 
             //Configure Abp and Dependency Injection
-            return services.AddAbp<AbpZeroTemplateWebFrontEndModule>(options =>
+            return services.AddAbp<MeiLianWebFrontEndModule>(options =>
             {
                 //Configure Log4Net logging
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
@@ -87,13 +87,13 @@ namespace MeiLian.Web.Public.Startup
 #if FEATURE_SIGNALR
         private static void ConfigureOwinServices(IAppBuilder app)
         {
-            app.Properties["host.AppName"] = "AbpZeroTemplate";
+            app.Properties["host.AppName"] = "MeiLian";
 
             app.UseAbp();
 
             app.MapSignalR();
 
-            //Enable it to use HangFire dashboard (uncomment only if it's enabled in AbpZeroTemplateWebCoreModule)
+            //Enable it to use HangFire dashboard (uncomment only if it's enabled in MeiLianWebCoreModule)
             //app.UseHangfireDashboard("/hangfire", new DashboardOptions
             //{
             //    Authorization = new[] { new AbpHangfireAuthorizationFilter(AppPermissions.Pages_Administration_HangfireDashboard) }

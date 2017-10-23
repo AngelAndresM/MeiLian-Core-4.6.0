@@ -9,24 +9,24 @@ using MeiLian.Migrator.DependencyInjection;
 
 namespace MeiLian.Migrator
 {
-    [DependsOn(typeof(AbpZeroTemplateEntityFrameworkCoreModule))]
-    public class AbpZeroTemplateMigratorModule : AbpModule
+    [DependsOn(typeof(MeiLianEntityFrameworkCoreModule))]
+    public class MeiLianMigratorModule : AbpModule
     {
         private readonly IConfigurationRoot _appConfiguration;
 
-        public AbpZeroTemplateMigratorModule(AbpZeroTemplateEntityFrameworkCoreModule abpZeroTemplateEntityFrameworkCoreModule)
+        public MeiLianMigratorModule(MeiLianEntityFrameworkCoreModule MeiLianEntityFrameworkCoreModule)
         {
-            abpZeroTemplateEntityFrameworkCoreModule.SkipDbSeed = true;
+            MeiLianEntityFrameworkCoreModule.SkipDbSeed = true;
 
             _appConfiguration = AppConfigurations.Get(
-                typeof(AbpZeroTemplateMigratorModule).GetAssembly().GetDirectoryPathOrNull()
+                typeof(MeiLianMigratorModule).GetAssembly().GetDirectoryPathOrNull()
             );
         }
 
         public override void PreInitialize()
         {
             Configuration.DefaultNameOrConnectionString = _appConfiguration.GetConnectionString(
-                AbpZeroTemplateConsts.ConnectionStringName
+                MeiLianConsts.ConnectionStringName
                 );
 
             Configuration.BackgroundJobs.IsJobExecutionEnabled = false;
@@ -40,7 +40,7 @@ namespace MeiLian.Migrator
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateMigratorModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(MeiLianMigratorModule).GetAssembly());
             ServiceCollectionRegistrar.Register(IocManager);
         }
     }

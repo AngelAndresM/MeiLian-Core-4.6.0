@@ -7,7 +7,7 @@ namespace MeiLian.Tenants.Dashboard
 {
     [DisableAuditing]
     [AbpAuthorize(AppPermissions.Pages_Tenant_Dashboard)]
-    public class TenantDashboardAppService : AbpZeroTemplateAppServiceBase, ITenantDashboardAppService
+    public class TenantDashboardAppService : MeiLianAppServiceBase, ITenantDashboardAppService
     {
         public GetMemberActivityOutput GetMemberActivity()
         {

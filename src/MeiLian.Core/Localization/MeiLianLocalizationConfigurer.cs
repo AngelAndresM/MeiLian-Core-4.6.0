@@ -6,16 +6,16 @@ using Abp.Reflection.Extensions;
 
 namespace MeiLian.Localization
 {
-    public static class AbpZeroTemplateLocalizationConfigurer
+    public static class MeiLianLocalizationConfigurer
     {
         public static void Configure(ILocalizationConfiguration localizationConfiguration)
         {
             localizationConfiguration.Sources.Add(
                 new DictionaryBasedLocalizationSource(
-                    AbpZeroTemplateConsts.LocalizationSourceName,
+                    MeiLianConsts.LocalizationSourceName,
                     new XmlEmbeddedFileLocalizationDictionaryProvider(
-                        typeof(AbpZeroTemplateLocalizationConfigurer).GetAssembly(),
-                        "MeiLian.Localization.AbpZeroTemplate"
+                        typeof(MeiLianLocalizationConfigurer).GetAssembly(),
+                        "MeiLian.Localization"
                     )
                 )
             );

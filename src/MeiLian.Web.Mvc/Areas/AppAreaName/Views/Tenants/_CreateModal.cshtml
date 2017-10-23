@@ -1,7 +1,7 @@
 ﻿@using Abp.Json
-@using MyCompanyName.AbpZeroTemplate.MultiTenancy
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Common.Modals
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Tenants
+@using MeiLian.MultiTenancy
+@using MeiLian.Web.Areas.AppAreaName.Models.Common.Modals
+@using MeiLian.Web.Areas.AppAreaName.Models.Tenants
 @model CreateTenantViewModel
 <script>
     window.passwordComplexitySetting = @Html.Raw(Model.PasswordComplexitySetting.ToJsonString(indented: true));
@@ -40,7 +40,7 @@
         </div>
 
         <div class="form-group form-md-line-input form-md-floating-label">
-            <input type="email" name="AdminEmailAddress" class="form-control" required maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxEmailAddressLength">
+            <input type="email" name="AdminEmailAddress" class="form-control" required maxlength="@MeiLian.Authorization.Users.User.MaxEmailAddressLength">
             <label>@L("AdminEmailAddress")</label>
         </div>
 
@@ -57,12 +57,12 @@
         </div>
 
         <div class="form-group form-md-line-input form-md-floating-label no-hint tenant-admin-password" style="display:none">
-            <input id="CreateTenant_AdminPassword" type="password" name="AdminPassword" class="form-control" maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxPlainPasswordLength">
+            <input id="CreateTenant_AdminPassword" type="password" name="AdminPassword" class="form-control" maxlength="@MeiLian.Authorization.Users.User.MaxPlainPasswordLength">
             <label>@L("Password")</label>
         </div>
 
         <div class="form-group form-md-line-input form-md-floating-label tenant-admin-password" style="display:none">
-            <input type="password" name="AdminPasswordRepeat" class="form-control" maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxPlainPasswordLength" equalto="#CreateTenant_AdminPassword">
+            <input type="password" name="AdminPasswordRepeat" class="form-control" maxlength="@MeiLian.Authorization.Users.User.MaxPlainPasswordLength" equalto="#CreateTenant_AdminPassword">
             <label>@L("PasswordRepeat")</label>
         </div>
 

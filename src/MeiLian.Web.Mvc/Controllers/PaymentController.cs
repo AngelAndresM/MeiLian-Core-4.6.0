@@ -14,7 +14,7 @@ using MeiLian.Web.Models.Payment;
 
 namespace MeiLian.Web.Controllers
 {
-    public class PaymentController : AbpZeroTemplateControllerBase
+    public class PaymentController : MeiLianControllerBase
     {
         private readonly IPaymentAppService _paymentAppService;
         private readonly ITenantRegistrationAppService _tenantRegistrationAppService;

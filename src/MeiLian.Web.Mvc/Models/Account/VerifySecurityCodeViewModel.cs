@@ -9,12 +9,12 @@ namespace MeiLian.Web.Models.Account
         public string Provider { get; set; }
 
         [Required]
-        [AbpDisplayName(AbpZeroTemplateConsts.LocalizationSourceName, "Code")]
+        [AbpDisplayName(MeiLianConsts.LocalizationSourceName, "Code")]
         public string Code { get; set; }
 
         public string ReturnUrl { get; set; }
 
-        [AbpDisplayName(AbpZeroTemplateConsts.LocalizationSourceName, "RememberThisBrowser")]
+        [AbpDisplayName(MeiLianConsts.LocalizationSourceName, "RememberThisBrowser")]
         public bool RememberBrowser { get; set; }
 
         public bool RememberMe { get; set; }

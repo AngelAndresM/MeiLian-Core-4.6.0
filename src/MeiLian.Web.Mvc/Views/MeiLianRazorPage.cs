@@ -4,14 +4,14 @@ using Microsoft.AspNetCore.Mvc.Razor.Internal;
 
 namespace MeiLian.Web.Views
 {
-    public abstract class AbpZeroTemplateRazorPage<TModel> : AbpRazorPage<TModel>
+    public abstract class MeiLianRazorPage<TModel> : AbpRazorPage<TModel>
     {
         [RazorInject]
         public IAbpSession AbpSession { get; set; }
 
-        protected AbpZeroTemplateRazorPage()
+        protected MeiLianRazorPage()
         {
-            LocalizationSourceName = AbpZeroTemplateConsts.LocalizationSourceName;
+            LocalizationSourceName = MeiLianConsts.LocalizationSourceName;
         }
     }
 }

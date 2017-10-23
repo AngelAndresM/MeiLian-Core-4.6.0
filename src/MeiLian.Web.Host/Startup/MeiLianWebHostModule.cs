@@ -14,13 +14,13 @@ using MeiLian.Web.Authentication.External.Microsoft;
 namespace MeiLian.Web.Startup
 {
     [DependsOn(
-        typeof(AbpZeroTemplateWebCoreModule))]
-    public class AbpZeroTemplateWebHostModule : AbpModule
+        typeof(MeiLianWebCoreModule))]
+    public class MeiLianWebHostModule : AbpModule
     {
         private readonly IHostingEnvironment _env;
         private readonly IConfigurationRoot _appConfiguration;
 
-        public AbpZeroTemplateWebHostModule(IHostingEnvironment env)
+        public MeiLianWebHostModule(IHostingEnvironment env)
         {
             _env = env;
             _appConfiguration = env.GetAppConfiguration();
@@ -33,7 +33,7 @@ namespace MeiLian.Web.Startup
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateWebHostModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(MeiLianWebHostModule).GetAssembly());
         }
 
         public override void PostInitialize()

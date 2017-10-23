@@ -19,7 +19,7 @@ namespace MeiLian.Auditing
 {
     [DisableAuditing]
     [AbpAuthorize(AppPermissions.Pages_Administration_AuditLogs)]
-    public class AuditLogAppService : AbpZeroTemplateAppServiceBase, IAuditLogAppService
+    public class AuditLogAppService : MeiLianAppServiceBase, IAuditLogAppService
     {
         private readonly IRepository<AuditLog, long> _auditLogRepository;
         private readonly IRepository<User, long> _userRepository;

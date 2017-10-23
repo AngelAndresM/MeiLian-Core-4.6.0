@@ -28,7 +28,7 @@ using MeiLian.MultiTenancy.Payments.Dto;
 
 namespace MeiLian.MultiTenancy
 {
-    public class TenantRegistrationAppService : AbpZeroTemplateAppServiceBase, ITenantRegistrationAppService
+    public class TenantRegistrationAppService : MeiLianAppServiceBase, ITenantRegistrationAppService
     {
         public IAppUrlService AppUrlService { get; set; }
 

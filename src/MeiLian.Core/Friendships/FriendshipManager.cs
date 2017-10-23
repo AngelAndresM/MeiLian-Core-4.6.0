@@ -7,7 +7,7 @@ using Abp.UI;
 
 namespace MeiLian.Friendships
 {
-    public class FriendshipManager : AbpZeroTemplateDomainServiceBase, IFriendshipManager
+    public class FriendshipManager : MeiLianDomainServiceBase, IFriendshipManager
     {
         private readonly IRepository<Friendship, long> _friendshipRepository;
 

@@ -15,7 +15,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_DemoUiComponents)]
-    public class DemoUiComponentsController : AbpZeroTemplateControllerBase
+    public class DemoUiComponentsController : MeiLianControllerBase
     {
         private readonly IBinaryObjectManager _binaryObjectManager;
 

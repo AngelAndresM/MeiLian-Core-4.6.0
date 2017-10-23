@@ -5,7 +5,7 @@ using Abp.Zero.EntityFrameworkCore;
 
 namespace MeiLian.EntityFrameworkCore
 {
-    public class AbpZeroDbMigrator : AbpZeroDbMigrator<AbpZeroTemplateDbContext>
+    public class AbpZeroDbMigrator : AbpZeroDbMigrator<MeiLianDbContext>
     {
         public AbpZeroDbMigrator(
             IUnitOfWorkManager unitOfWorkManager,

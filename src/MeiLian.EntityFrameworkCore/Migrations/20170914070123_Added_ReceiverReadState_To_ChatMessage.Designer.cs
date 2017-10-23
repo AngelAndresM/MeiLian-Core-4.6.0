@@ -17,7 +17,7 @@ using System;
 
 namespace MeiLian.Migrations
 {
-    [DbContext(typeof(AbpZeroTemplateDbContext))]
+    [DbContext(typeof(MeiLianDbContext))]
     [Migration("20170914070123_Added_ReceiverReadState_To_ChatMessage")]
     partial class Added_ReceiverReadState_To_ChatMessage
     {

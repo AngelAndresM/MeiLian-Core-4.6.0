@@ -7,16 +7,16 @@ using MeiLian.Web;
 namespace MeiLian.EntityFrameworkCore
 {
     /* This class is needed to run "dotnet ef ..." commands from command line on development. Not used anywhere else */
-    public class AbpZeroTemplateDbContextFactory : IDesignTimeDbContextFactory<AbpZeroTemplateDbContext>
+    public class MeiLianDbContextFactory : IDesignTimeDbContextFactory<MeiLianDbContext>
     {
-        public AbpZeroTemplateDbContext CreateDbContext(string[] args)
+        public MeiLianDbContext CreateDbContext(string[] args)
         {
-            var builder = new DbContextOptionsBuilder<AbpZeroTemplateDbContext>();
+            var builder = new DbContextOptionsBuilder<MeiLianDbContext>();
             var configuration = AppConfigurations.Get(WebContentDirectoryFinder.CalculateContentRootFolder());
 
-            AbpZeroTemplateDbContextConfigurer.Configure(builder, configuration.GetConnectionString(AbpZeroTemplateConsts.ConnectionStringName));
+            MeiLianDbContextConfigurer.Configure(builder, configuration.GetConnectionString(MeiLianConsts.ConnectionStringName));
 
-            return new AbpZeroTemplateDbContext(builder.Options);
+            return new MeiLianDbContext(builder.Options);
         }
     }
 }

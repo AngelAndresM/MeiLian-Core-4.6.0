@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Antiforgery;
 
 namespace MeiLian.Web.Controllers
 {
-    public class AntiForgeryController : AbpZeroTemplateControllerBase
+    public class AntiForgeryController : MeiLianControllerBase
     {
         private readonly IAntiforgery _antiforgery;
 

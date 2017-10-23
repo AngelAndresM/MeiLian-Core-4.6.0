@@ -28,7 +28,7 @@ namespace MeiLian.MultiTenancy
             Timer.Period = CheckPeriodAsMilliseconds;
             Timer.RunOnStart = true;
 
-            LocalizationSourceName = AbpZeroTemplateConsts.LocalizationSourceName;
+            LocalizationSourceName = MeiLianConsts.LocalizationSourceName;
         }
 
         protected override void DoWork()

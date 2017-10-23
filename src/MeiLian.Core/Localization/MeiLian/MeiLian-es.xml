@@ -100,12 +100,12 @@
     <text name="Send" value="Enviar" />
     <text name="PasswordReset" value="Reiniciar contraseña" />
     <text name="InvalidUserNameOrEmailAddress" value="Nombre de usuario o contraseña incorrecta" />
-    <text name="PasswordResetEmail_Subject" value="Reiniciar contraseña AbpZeroTemplate." />
-    <text name="PasswordResetEmail_Title" value="Reiniciar contraseña AbpZeroTemplate." />
+    <text name="PasswordResetEmail_Subject" value="Reiniciar contraseña MeiLian." />
+    <text name="PasswordResetEmail_Title" value="Reiniciar contraseña MeiLian." />
     <text name="PasswordResetEmail_SubTitle" value="Este email ha sido enviado para que reinicie su contraseña." />
     <text name="PasswordResetEmail_ClickTheLinkBelowToResetYourPassword" value="Por favor, click en el enlace debajo para reiniciar su contraseña:" />
-    <text name="EmailActivation_Subject" value="Email de activación de cuenta AbpZeroTemplate" />
-    <text name="EmailActivation_Title" value="Bienvenido a AbpZeroTemplate." />
+    <text name="EmailActivation_Subject" value="Email de activación de cuenta MeiLian" />
+    <text name="EmailActivation_Title" value="Bienvenido a MeiLian." />
     <text name="EmailActivation_SubTitle" value="Verifique su email." />
     <text name="EmailActivation_ClickTheLinkBelowToVerifyYourEmail" value="Por favor, click en el enlace debajo para verificar su email:" />
     <text name="InvalidEmailAddress" value="Dirección de correo inválida" />
@@ -328,7 +328,7 @@
     <text name="SuccessfullyUnlinked">Enlace eliminado exitósamente</text>
     <text name="LinkedUserDeleteWarningMessage">Enlace a usuario {0} será borrado.</text>
     <text name="SwitchToLinkedAccountTokenErrorMessage" value="Token de personificación es inválido o ha expirado!" />
-    <text name="WelcomeToTheApplicationNotificationMessage" value="Bienvenido a AbpZeroTemplate! El sistema de notificación es usado para informarle sobre eventos. Ud. puede seleccionar que tipo de notificacion Ud. desea recibir en la configuración de notificaciones." />
+    <text name="WelcomeToTheApplicationNotificationMessage" value="Bienvenido a MeiLian! El sistema de notificación es usado para informarle sobre eventos. Ud. puede seleccionar que tipo de notificacion Ud. desea recibir en la configuración de notificaciones." />
     <text name="NewUserRegisteredNotificationDefinition" value="En un nuevo usuario registrado en la aplicación." />
     <text name="NewUserRegisteredNotificationMessage" value="Un nuevo usuario ha sido registrado en la aplicación. Nombre de usuario: {userName}, Email: {emailAddress}." />
     <text name="SeeAllNotifications" value="Ver todas las notificaciones" />
@@ -354,7 +354,7 @@
     <text name="CachesHeaderInfo">Ud. puede limpiar la cache en esta página.</text>
     <text name="TestEmailSettingsHeader">Configuración de email de prueba.</text>
     <text name="SendTestEmail">Enviar email de prueba</text>
-    <text name="TestEmail_Subject">AbpZeroTemplate email de prueba</text>
+    <text name="TestEmail_Subject">MeiLian email de prueba</text>
     <text name="TestEmail_Body">Este es un email de prueba.</text>
     <text name="TestEmailSentSuccessfully">Email de prueba enviado exitósamente.</text>
     <text name="WebSiteLogs">Registros del sitio web</text>
@@ -592,8 +592,8 @@
     <text name="IsInTrialPeriod">Está aún es periodo de prueba?</text>
     <text name="FailedSubscriptionTerminations_Email_Subject">Terminaciones de suscripciones fallidas</text>
     <text name="FailedSubscriptionTerminations_Email_Body">Terminación de suscripción ha fallado para los siguientes inquilinos {0} en {1}. Ud. puede encontrar mensajes de error detallados en los registros del sistema.</text>
-    <text name="SubscriptionExpire_Email_Subject">Su suscripción con AbpZeroTemplate ha expirado.</text>
-    <text name="SubscriptionExpire_Email_Body">Su suscripción con AbpZeroTemplate está expirada en {0}.</text>
+    <text name="SubscriptionExpire_Email_Subject">Su suscripción con MeiLian ha expirado.</text>
+    <text name="SubscriptionExpire_Email_Body">Su suscripción con MeiLian está expirada en {0}.</text>
     <text name="UnlimitedTimeSubscription">Suscripción ilimitada</text>
     <text name="SubscriptionEndDateUtc">Fecha final de suscripción (Utc)</text>
     <text name="ExpiringEditionMustBeAFreeEdition">Edición a expirar debe ser una edición gratis</text>

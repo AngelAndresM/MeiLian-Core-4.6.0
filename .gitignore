@@ -115,9 +115,9 @@ Backup*/
 UpgradeLog*.XML
 src/.vs/config/applicationhost.config
 
-src/MyCompanyName.AbpZeroTemplate.Web.Host/wwwroot/Temp/Downloads
-src/MyCompanyName.AbpZeroTemplate.Web.Mvc/wwwroot/Temp/Downloads
-src/MyCompanyName.AbpZeroTemplate.Web.Mvc/Properties/PublishProfiles
+src/MeiLian.Web.Host/wwwroot/Temp/Downloads
+src/MeiLian.Web.Mvc/wwwroot/Temp/Downloads
+src/MeiLian.Web.Mvc/Properties/PublishProfiles
 
-src/MyCompanyName.AbpZeroTemplate.Web.Mvc/wwwroot/lib
-src/MyCompanyName.AbpZeroTemplate.Web.Public/wwwroot/lib
+src/MeiLian.Web.Mvc/wwwroot/lib
+src/MeiLian.Web.Public/wwwroot/lib

@@ -7,7 +7,7 @@ using MeiLian.Features;
 
 namespace MeiLian.Authorization.Users
 {
-    public class UserPolicy : AbpZeroTemplateServiceBase, IUserPolicy
+    public class UserPolicy : MeiLianServiceBase, IUserPolicy
     {
         private readonly IFeatureChecker _featureChecker;
         private readonly IRepository<User, long> _userRepository;

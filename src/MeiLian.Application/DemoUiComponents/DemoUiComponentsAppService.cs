@@ -9,7 +9,7 @@ using MeiLian.DemoUiComponents.Dto;
 namespace MeiLian.DemoUiComponents
 {
     [AbpAuthorize(AppPermissions.Pages_DemoUiComponents)]
-    public class DemoUiComponentsAppService : AbpZeroTemplateAppServiceBase, IDemoUiComponentsAppService
+    public class DemoUiComponentsAppService : MeiLianAppServiceBase, IDemoUiComponentsAppService
     {
         #region date & time pickers
         public DateToStringOutput SendAndGetDate(DateTime? date)

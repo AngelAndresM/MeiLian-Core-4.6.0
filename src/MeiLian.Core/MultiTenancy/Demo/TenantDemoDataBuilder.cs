@@ -23,7 +23,7 @@ namespace MeiLian.MultiTenancy.Demo
     /// Creates sample organization units, users... etc.
     /// It works only if in DEMO mode ("App.DemoMode" should be "true" in web.config). Otherwise, does nothing.
     /// </summary>
-    public class TenantDemoDataBuilder : AbpZeroTemplateServiceBase, ITransientDependency
+    public class TenantDemoDataBuilder : MeiLianServiceBase, ITransientDependency
     {
         public bool IsInDemoMode
         {

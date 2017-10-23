@@ -7,7 +7,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Tenant_Dashboard)]
-    public class DashboardController : AbpZeroTemplateControllerBase
+    public class DashboardController : MeiLianControllerBase
     {
         public ActionResult Index()
         {

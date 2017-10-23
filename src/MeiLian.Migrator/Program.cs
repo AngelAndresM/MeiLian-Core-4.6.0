@@ -15,7 +15,7 @@ namespace MeiLian.Migrator
         {
             ParseArgs(args);
 
-            using (var bootstrapper = AbpBootstrapper.Create<AbpZeroTemplateMigratorModule>())
+            using (var bootstrapper = AbpBootstrapper.Create<MeiLianMigratorModule>())
             {
                 bootstrapper.IocManager.IocContainer
                     .AddFacility<LoggingFacility>(f => f.UseAbpLog4Net()

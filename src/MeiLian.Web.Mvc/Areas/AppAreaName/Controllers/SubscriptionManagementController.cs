@@ -17,7 +17,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Administration_Tenant_SubscriptionManagement)]
-    public class SubscriptionManagementController : AbpZeroTemplateControllerBase
+    public class SubscriptionManagementController : MeiLianControllerBase
     {
         private readonly IPerRequestSessionCache _sessionCache;
         private readonly IPaymentAppService _paymentAppService;

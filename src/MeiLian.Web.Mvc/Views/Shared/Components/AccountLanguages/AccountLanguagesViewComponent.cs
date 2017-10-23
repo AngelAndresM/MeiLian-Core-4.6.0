@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MeiLian.Web.Views.Shared.Components.AccountLanguages
 {
-    public class AccountLanguagesViewComponent : AbpZeroTemplateViewComponent
+    public class AccountLanguagesViewComponent : MeiLianViewComponent
     {
         private readonly ILanguageManager _languageManager;
 

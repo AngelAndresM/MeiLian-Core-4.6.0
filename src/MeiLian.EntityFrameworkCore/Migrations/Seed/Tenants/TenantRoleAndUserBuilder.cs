@@ -18,10 +18,10 @@ namespace MeiLian.Migrations.Seed.Tenants
 {
     public class TenantRoleAndUserBuilder
     {
-        private readonly AbpZeroTemplateDbContext _context;
+        private readonly MeiLianDbContext _context;
         private readonly int _tenantId;
 
-        public TenantRoleAndUserBuilder(AbpZeroTemplateDbContext context, int tenantId)
+        public TenantRoleAndUserBuilder(MeiLianDbContext context, int tenantId)
         {
             _context = context;
             _tenantId = tenantId;

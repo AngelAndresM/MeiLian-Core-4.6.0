@@ -13,7 +13,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Administration_Roles)]
-    public class RolesController : AbpZeroTemplateControllerBase
+    public class RolesController : MeiLianControllerBase
     {
         private readonly IRoleAppService _roleAppService;
         private readonly IPermissionAppService _permissionAppService;

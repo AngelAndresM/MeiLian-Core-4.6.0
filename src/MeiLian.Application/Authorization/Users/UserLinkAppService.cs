@@ -17,7 +17,7 @@ using MeiLian.MultiTenancy;
 namespace MeiLian.Authorization.Users
 {
     [AbpAuthorize]
-    public class UserLinkAppService : AbpZeroTemplateAppServiceBase, IUserLinkAppService
+    public class UserLinkAppService : MeiLianAppServiceBase, IUserLinkAppService
     {
         private readonly AbpLoginResultTypeHelper _abpLoginResultTypeHelper;
         private readonly IUserLinkManager _userLinkManager;

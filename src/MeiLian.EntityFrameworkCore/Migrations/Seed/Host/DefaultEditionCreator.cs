@@ -9,9 +9,9 @@ namespace MeiLian.Migrations.Seed.Host
 {
     public class DefaultEditionCreator
     {
-        private readonly AbpZeroTemplateDbContext _context;
+        private readonly MeiLianDbContext _context;
 
-        public DefaultEditionCreator(AbpZeroTemplateDbContext context)
+        public DefaultEditionCreator(MeiLianDbContext context)
         {
             _context = context;
         }

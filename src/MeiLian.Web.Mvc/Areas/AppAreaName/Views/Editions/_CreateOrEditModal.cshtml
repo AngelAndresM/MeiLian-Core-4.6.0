@@ -1,8 +1,8 @@
 ﻿@using Abp.Application.Editions
 @using Abp.Application.Services.Dto
 @using Abp.Extensions
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Common.Modals
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Editions
+@using MeiLian.Web.Areas.AppAreaName.Models.Common.Modals
+@using MeiLian.Web.Areas.AppAreaName.Models.Editions
 @model CreateOrEditEditionModalViewModel
 
 @Html.Partial("~/Areas/AppAreaName/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditEdition") + ": " + Model.Edition.DisplayName) : L("CreateNewEdition")))

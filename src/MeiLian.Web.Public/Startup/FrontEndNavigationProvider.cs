@@ -73,7 +73,7 @@ namespace MeiLian.Web.Public.Startup
 
         private static ILocalizableString L(string name)
         {
-            return new LocalizableString(name, AbpZeroTemplateConsts.LocalizationSourceName);
+            return new LocalizableString(name, MeiLianConsts.LocalizationSourceName);
         }
     }
 }

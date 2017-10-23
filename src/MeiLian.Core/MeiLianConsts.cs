@@ -1,8 +1,8 @@
 namespace MeiLian
 {
-    public class AbpZeroTemplateConsts
+    public class MeiLianConsts
     {
-        public const string LocalizationSourceName = "AbpZeroTemplate";
+        public const string LocalizationSourceName = "MeiLian";
 
         public const string ConnectionStringName = "Default";
 

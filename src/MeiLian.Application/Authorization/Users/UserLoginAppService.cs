@@ -13,7 +13,7 @@ using MeiLian.Authorization.Users.Dto;
 namespace MeiLian.Authorization.Users
 {
     [AbpAuthorize]
-    public class UserLoginAppService : AbpZeroTemplateAppServiceBase, IUserLoginAppService
+    public class UserLoginAppService : MeiLianAppServiceBase, IUserLoginAppService
     {
         private readonly IRepository<UserLoginAttempt, long> _userLoginAttemptRepository;
 

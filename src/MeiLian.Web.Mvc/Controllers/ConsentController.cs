@@ -10,7 +10,7 @@ using MeiLian.Web.Models.Consent;
 
 namespace MeiLian.Web.Controllers
 {
-    public class ConsentController : AbpZeroTemplateControllerBase
+    public class ConsentController : MeiLianControllerBase
     {
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IResourceStore _resourceStore;

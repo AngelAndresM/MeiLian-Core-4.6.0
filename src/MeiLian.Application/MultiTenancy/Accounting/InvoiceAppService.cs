@@ -15,7 +15,7 @@ using MeiLian.MultiTenancy.Payments;
 
 namespace MeiLian.MultiTenancy.Accounting
 {
-    public class InvoiceAppService : AbpZeroTemplateAppServiceBase, IInvoiceAppService
+    public class InvoiceAppService : MeiLianAppServiceBase, IInvoiceAppService
     {
         private readonly ISubscriptionPaymentRepository _subscriptionPaymentRepository;
         private readonly IInvoiceNumberGenerator _invoiceNumberGenerator;

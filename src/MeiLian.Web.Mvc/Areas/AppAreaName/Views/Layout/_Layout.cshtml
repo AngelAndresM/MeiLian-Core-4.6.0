@@ -1,17 +1,17 @@
 ﻿@using System.Globalization
 @using System.Threading.Tasks
 @using Abp.MultiTenancy
-@using MyCompanyName.AbpZeroTemplate.Features
-@using MyCompanyName.AbpZeroTemplate.Timing
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Views.Shared.Components.AppAreaNameFooter
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Views.Shared.Components.AppAreaNameHeader
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Views.Shared.Components.AppAreaNameSideBar
-@using MyCompanyName.AbpZeroTemplate.Web.Resources
+@using MeiLian.Features
+@using MeiLian.Timing
+@using MeiLian.Web.Areas.AppAreaName.Views.Shared.Components.AppAreaNameFooter
+@using MeiLian.Web.Areas.AppAreaName.Views.Shared.Components.AppAreaNameHeader
+@using MeiLian.Web.Areas.AppAreaName.Views.Shared.Components.AppAreaNameSideBar
+@using MeiLian.Web.Resources
 @using Abp.Web.Security.AntiForgery
-@using MyCompanyName.AbpZeroTemplate.Chat.SignalR
-@using MyCompanyName.AbpZeroTemplate.Url
-@using MyCompanyName.AbpZeroTemplate.Web.Session
-@using CultureHelper = MyCompanyName.AbpZeroTemplate.Localization.CultureHelper
+@using MeiLian.Chat.SignalR
+@using MeiLian.Url
+@using MeiLian.Web.Session
+@using CultureHelper = MeiLian.Localization.CultureHelper
 @inject ScriptPaths ScriptPaths
 @inject AppTimes AppTimes
 @inject IAbpAntiForgeryManager AbpAntiForgeryManager
@@ -25,7 +25,7 @@
 <!DOCTYPE html>
 <html lang="en" @(CultureHelper.IsRtl ? "dir=\"rtl\"" : "")>
 <head>
-    <title>AbpZeroTemplate</title>
+    <title>MeiLian</title>
     <meta charset="utf-8" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

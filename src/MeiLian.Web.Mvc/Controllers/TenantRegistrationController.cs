@@ -25,7 +25,7 @@ using MeiLian.Web.Models.TenantRegistration;
 
 namespace MeiLian.Web.Controllers
 {
-    public class TenantRegistrationController : AbpZeroTemplateControllerBase
+    public class TenantRegistrationController : MeiLianControllerBase
     {
         private readonly IMultiTenancyConfig _multiTenancyConfig;
         private readonly UserManager _userManager;

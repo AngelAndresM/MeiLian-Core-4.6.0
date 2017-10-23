@@ -11,7 +11,7 @@ using MeiLian.Web.Views;
 
 namespace MeiLian.Web.Areas.AppAreaName.Views.Shared.Components.AppAreaNameSideBar
 {
-    public class AppAreaNameSideBarViewComponent : AbpZeroTemplateViewComponent
+    public class AppAreaNameSideBarViewComponent : MeiLianViewComponent
     {
         private readonly IUserNavigationManager _userNavigationManager;
         private readonly IAbpSession _abpSession;

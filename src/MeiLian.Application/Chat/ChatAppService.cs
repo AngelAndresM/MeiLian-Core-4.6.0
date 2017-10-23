@@ -16,7 +16,7 @@ using MeiLian.Friendships.Dto;
 
 namespace MeiLian.Chat
 {
-    public class ChatAppService : AbpZeroTemplateAppServiceBase, IChatAppService
+    public class ChatAppService : MeiLianAppServiceBase, IChatAppService
     {
         private readonly IRepository<ChatMessage, long> _chatMessageRepository;
         private readonly IUserFriendsCache _userFriendsCache;

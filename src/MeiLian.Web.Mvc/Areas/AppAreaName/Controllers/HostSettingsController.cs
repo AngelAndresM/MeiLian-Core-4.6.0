@@ -17,7 +17,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Administration_Host_Settings)]
-    public class HostSettingsController : AbpZeroTemplateControllerBase
+    public class HostSettingsController : MeiLianControllerBase
     {
         private readonly UserManager _userManager;
         private readonly IHostSettingsAppService _hostSettingsAppService;

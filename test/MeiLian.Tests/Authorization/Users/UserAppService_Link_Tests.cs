@@ -116,7 +116,7 @@ namespace MeiLian.Tests.Authorization.Users
         {
             var testTenant = new Tenant("Test", "test")
             {
-                ConnectionString = SimpleStringCipher.Instance.Encrypt("Server=localhost; Database=AbpZeroTemplateTest_" + Guid.NewGuid().ToString("N") + "; Trusted_Connection=True;")
+                ConnectionString = SimpleStringCipher.Instance.Encrypt("Server=localhost; Database=MeiLianTest_" + Guid.NewGuid().ToString("N") + "; Trusted_Connection=True;")
             };
 
             await _tenantManager.CreateAsync(testTenant);

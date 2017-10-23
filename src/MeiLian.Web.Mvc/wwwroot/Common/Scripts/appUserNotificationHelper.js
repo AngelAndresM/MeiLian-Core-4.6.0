@@ -10,7 +10,7 @@
             //add your custom notification data types here...
 
             /* Example:
-            abp.notifications.messageFormatters['MyCompanyName.AbpZeroTemplate.MyNotificationDataType'] = function(userNotification) {
+            abp.notifications.messageFormatters['MeiLian.MyNotificationDataType'] = function(userNotification) {
                 return ...; //format and return message here
             };
             */
@@ -67,7 +67,7 @@
                 });
 
                 //Desktop notification
-                Push.create("AbpZeroTemplate", {
+                Push.create("MeiLian", {
                     body: format(userNotification).text,
                     icon: abp.appPath + 'Common/Images/app-logo-small.png',
                     timeout: 6000,

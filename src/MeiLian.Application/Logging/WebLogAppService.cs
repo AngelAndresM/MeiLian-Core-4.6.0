@@ -14,7 +14,7 @@ using MeiLian.Net.MimeTypes;
 namespace MeiLian.Logging
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Host_Maintenance)]
-    public class WebLogAppService : AbpZeroTemplateAppServiceBase, IWebLogAppService
+    public class WebLogAppService : MeiLianAppServiceBase, IWebLogAppService
     {
         private readonly IAppFolders _appFolders;
 

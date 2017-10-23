@@ -17,7 +17,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Administration_Tenant_Settings)]
-    public class SettingsController : AbpZeroTemplateControllerBase
+    public class SettingsController : MeiLianControllerBase
     {
         private readonly UserManager _userManager;
         private readonly ITenantSettingsAppService _tenantSettingsAppService;

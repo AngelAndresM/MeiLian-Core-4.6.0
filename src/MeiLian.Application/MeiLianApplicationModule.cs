@@ -10,9 +10,9 @@ namespace MeiLian
     /// Application layer module of the application.
     /// </summary>
     [DependsOn(
-        typeof(AbpZeroTemplateCoreModule)
+        typeof(MeiLianCoreModule)
         )]
-    public class AbpZeroTemplateApplicationModule : AbpModule
+    public class MeiLianApplicationModule : AbpModule
     {
         public override void PreInitialize()
         {
@@ -25,7 +25,7 @@ namespace MeiLian
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateApplicationModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(MeiLianApplicationModule).GetAssembly());
         }
     }
 }

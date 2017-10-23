@@ -7,7 +7,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize]
-    public class CommonController : AbpZeroTemplateControllerBase
+    public class CommonController : MeiLianControllerBase
     {
         public PartialViewResult LookupModal(LookupModalViewModel model)
         {

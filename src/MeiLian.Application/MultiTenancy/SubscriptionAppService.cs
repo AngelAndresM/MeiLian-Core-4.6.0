@@ -5,7 +5,7 @@ using MeiLian.Editions;
 
 namespace MeiLian.MultiTenancy
 {
-    public class SubscriptionAppService : AbpZeroTemplateAppServiceBase, ISubscriptionAppService
+    public class SubscriptionAppService : MeiLianAppServiceBase, ISubscriptionAppService
     {
         private readonly TenantManager _tenantManager;
         private readonly EditionManager _editionManager;

@@ -15,10 +15,10 @@ namespace MeiLian.Migrations.Seed
     {
         public static void SeedHostDb(IIocResolver iocResolver)
         {
-            WithDbContext<AbpZeroTemplateDbContext>(iocResolver, SeedHostDb);
+            WithDbContext<MeiLianDbContext>(iocResolver, SeedHostDb);
         }
 
-        public static void SeedHostDb(AbpZeroTemplateDbContext context)
+        public static void SeedHostDb(MeiLianDbContext context)
         {
             context.SuppressAutoSetTenantId = true;
 

@@ -6,7 +6,7 @@ using Abp.UI;
 
 namespace MeiLian.Authorization
 {
-    public class AbpLoginResultTypeHelper : AbpZeroTemplateServiceBase, ITransientDependency
+    public class AbpLoginResultTypeHelper : MeiLianServiceBase, ITransientDependency
     {
         public Exception CreateExceptionForFailedLoginAttempt(AbpLoginResultType result, string usernameOrEmailAddress, string tenancyName)
         {

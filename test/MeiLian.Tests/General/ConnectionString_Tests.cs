@@ -9,8 +9,8 @@ namespace MeiLian.Tests.General
         [Fact]
         public void SqlConnectionStringBuilder_Test()
         {
-            var csb = new SqlConnectionStringBuilder("Server=localhost; Database=AbpZeroTemplate; Trusted_Connection=True;");
-            csb["Database"].ShouldBe("AbpZeroTemplate");
+            var csb = new SqlConnectionStringBuilder("Server=localhost; Database=MeiLian; Trusted_Connection=True;");
+            csb["Database"].ShouldBe("MeiLian");
         }
     }
 }

@@ -15,7 +15,7 @@ using MeiLian.Web.Session;
 
 namespace MeiLian.Web.Public.Views.Shared.Components.Header
 {
-    public class HeaderViewComponent : AbpZeroTemplateViewComponent
+    public class HeaderViewComponent : MeiLianViewComponent
     {
         private readonly IUserNavigationManager _userNavigationManager;
         private readonly IMultiTenancyConfig _multiTenancyConfig;

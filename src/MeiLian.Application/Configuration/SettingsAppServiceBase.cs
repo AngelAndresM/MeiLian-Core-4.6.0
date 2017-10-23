@@ -4,7 +4,7 @@ using MeiLian.Configuration.Host.Dto;
 
 namespace MeiLian.Configuration
 {
-    public abstract class SettingsAppServiceBase : AbpZeroTemplateAppServiceBase
+    public abstract class SettingsAppServiceBase : MeiLianAppServiceBase
     {
         private readonly IEmailSender _emailSender;
 

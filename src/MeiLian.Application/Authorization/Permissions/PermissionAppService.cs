@@ -6,7 +6,7 @@ using MeiLian.Authorization.Permissions.Dto;
 
 namespace MeiLian.Authorization.Permissions
 {
-    public class PermissionAppService : AbpZeroTemplateAppServiceBase, IPermissionAppService
+    public class PermissionAppService : MeiLianAppServiceBase, IPermissionAppService
     {
         public ListResultDto<FlatPermissionWithLevelDto> GetAllPermissions()
         {

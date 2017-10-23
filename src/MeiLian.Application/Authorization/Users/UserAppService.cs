@@ -33,7 +33,7 @@ using MeiLian.Organizations.Dto;
 namespace MeiLian.Authorization.Users
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Users)]
-    public class UserAppService : AbpZeroTemplateAppServiceBase, IUserAppService
+    public class UserAppService : MeiLianAppServiceBase, IUserAppService
     {
         public IAppUrlService AppUrlService { get; set; }
 

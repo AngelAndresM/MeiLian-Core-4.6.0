@@ -27,7 +27,7 @@ using MeiLian.Timing;
 namespace MeiLian.Authorization.Users.Profile
 {
     [AbpAuthorize]
-    public class ProfileAppService : AbpZeroTemplateAppServiceBase, IProfileAppService
+    public class ProfileAppService : MeiLianAppServiceBase, IProfileAppService
     {
         private readonly IAppFolders _appFolders;
         private readonly IBinaryObjectManager _binaryObjectManager;

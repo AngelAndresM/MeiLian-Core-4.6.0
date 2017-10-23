@@ -11,7 +11,7 @@ using MeiLian.Storage;
 namespace MeiLian.Web.Controllers
 {
     [AbpMvcAuthorize]
-    public class DemoUiComponentsController : AbpZeroTemplateControllerBase
+    public class DemoUiComponentsController : MeiLianControllerBase
     {
         private readonly IBinaryObjectManager _binaryObjectManager;
 

@@ -15,7 +15,7 @@ using MeiLian.Web.Helpers;
 
 namespace MeiLian.Web.Controllers
 {
-    public abstract class ProfileControllerBase : AbpZeroTemplateControllerBase
+    public abstract class ProfileControllerBase : MeiLianControllerBase
     {
         private readonly IAppFolders _appFolders;
 

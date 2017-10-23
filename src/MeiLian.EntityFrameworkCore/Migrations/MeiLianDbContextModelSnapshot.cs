@@ -17,8 +17,8 @@ using System;
 
 namespace MeiLian.Migrations
 {
-    [DbContext(typeof(AbpZeroTemplateDbContext))]
-    partial class AbpZeroTemplateDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(MeiLianDbContext))]
+    partial class MeiLianDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

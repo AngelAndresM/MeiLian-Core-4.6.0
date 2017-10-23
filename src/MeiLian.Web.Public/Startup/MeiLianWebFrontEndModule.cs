@@ -9,16 +9,16 @@ using MeiLian.EntityFrameworkCore;
 namespace MeiLian.Web.Public.Startup
 {
     [DependsOn(
-        typeof(AbpZeroTemplateWebCoreModule)
+        typeof(MeiLianWebCoreModule)
     )]
-    public class AbpZeroTemplateWebFrontEndModule : AbpModule
+    public class MeiLianWebFrontEndModule : AbpModule
     {
         private readonly IConfigurationRoot _appConfiguration;
 
-        public AbpZeroTemplateWebFrontEndModule(IHostingEnvironment env, AbpZeroTemplateEntityFrameworkCoreModule abpZeroTemplateEntityFrameworkCoreModule)
+        public MeiLianWebFrontEndModule(IHostingEnvironment env, MeiLianEntityFrameworkCoreModule MeiLianEntityFrameworkCoreModule)
         {
             _appConfiguration = env.GetAppConfiguration();
-            abpZeroTemplateEntityFrameworkCoreModule.SkipDbSeed = true;
+            MeiLianEntityFrameworkCoreModule.SkipDbSeed = true;
         }
 
         public override void PreInitialize()
@@ -36,7 +36,7 @@ namespace MeiLian.Web.Public.Startup
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateWebFrontEndModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(MeiLianWebFrontEndModule).GetAssembly());
         }
     }
 }

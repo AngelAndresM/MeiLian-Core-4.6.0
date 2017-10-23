@@ -5,7 +5,7 @@ using MeiLian.Features;
 
 namespace MeiLian.Chat
 {
-    public class ChatFeatureChecker : AbpZeroTemplateDomainServiceBase, IChatFeatureChecker
+    public class ChatFeatureChecker : MeiLianDomainServiceBase, IChatFeatureChecker
     {
         private readonly IFeatureChecker _featureChecker;
 

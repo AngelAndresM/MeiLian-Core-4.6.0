@@ -3,8 +3,8 @@
 @using Abp.Extensions
 @using Abp.Json
 @using Abp.Zero.Configuration
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Common.Modals
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Users
+@using MeiLian.Web.Areas.AppAreaName.Models.Common.Modals
+@using MeiLian.Web.Areas.AppAreaName.Models.Users
 @model CreateOrEditUserModalViewModel
 
 <script>
@@ -55,12 +55,12 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="form-group form-md-line-input form-md-floating-label no-hint">
-                                <input class="form-control@(Model.User.Name.IsNullOrEmpty() ? "" : " edited")" value="@Model.User.Name" type="text" name="Name" required maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxNameLength">
+                                <input class="form-control@(Model.User.Name.IsNullOrEmpty() ? "" : " edited")" value="@Model.User.Name" type="text" name="Name" required maxlength="@MeiLian.Authorization.Users.User.MaxNameLength">
                                 <label>@L("Name")</label>
                             </div>
 
                             <div class="form-group form-md-line-input form-md-floating-label no-hint">
-                                <input type="text" name="Surname" class="form-control@(Model.User.Surname.IsNullOrEmpty() ? "" : " edited")" value="@Model.User.Surname" required maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxSurnameLength">
+                                <input type="text" name="Surname" class="form-control@(Model.User.Surname.IsNullOrEmpty() ? "" : " edited")" value="@Model.User.Surname" required maxlength="@MeiLian.Authorization.Users.User.MaxSurnameLength">
                                 <label>@L("Surname")</label>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                     </div>
 
                     <div class="form-group form-md-line-input form-md-floating-label no-hint">
-                        <input type="text" name="PhoneNumber" class="form-control@(Model.User.PhoneNumber.IsNullOrEmpty() ? "" : " edited")" value="@Model.User.PhoneNumber" maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxPhoneNumberLength">
+                        <input type="text" name="PhoneNumber" class="form-control@(Model.User.PhoneNumber.IsNullOrEmpty() ? "" : " edited")" value="@Model.User.PhoneNumber" maxlength="@MeiLian.Authorization.Users.User.MaxPhoneNumberLength">
                         <label>@L("PhoneNumber")</label>
                     </div>
 
@@ -98,12 +98,12 @@
                     </div>
 
                     <div class="form-group form-md-line-input form-md-floating-label no-hint user-password" style="@(Model.IsEditMode ? "display:block" : "display:none")">
-                        <input id="EditUser_Password" type="password" name="Password" class="form-control" maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxPlainPasswordLength">
+                        <input id="EditUser_Password" type="password" name="Password" class="form-control" maxlength="@MeiLian.Authorization.Users.User.MaxPlainPasswordLength">
                         <label>@L("Password")</label>
                     </div>
 
                     <div class="form-group form-md-line-input form-md-floating-label no-hint user-password" style="@(Model.IsEditMode ? "display:block" : "display:none")">
-                        <input type="password" name="PasswordRepeat" class="form-control" maxlength="@MyCompanyName.AbpZeroTemplate.Authorization.Users.User.MaxPlainPasswordLength" equalto="#EditUser_Password">
+                        <input type="password" name="PasswordRepeat" class="form-control" maxlength="@MeiLian.Authorization.Users.User.MaxPlainPasswordLength" equalto="#EditUser_Password">
                         <label>@L("PasswordRepeat")</label>
                     </div>
 

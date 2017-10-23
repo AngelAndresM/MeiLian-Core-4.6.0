@@ -11,7 +11,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Editions)]
-    public class EditionsController : AbpZeroTemplateControllerBase
+    public class EditionsController : MeiLianControllerBase
     {
         private readonly IEditionAppService _editionAppService;
 

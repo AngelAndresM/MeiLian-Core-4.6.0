@@ -21,14 +21,14 @@ using NSubstitute;
 namespace MeiLian.Tests
 {
     [DependsOn(
-        typeof(AbpZeroTemplateApplicationModule),
-        typeof(AbpZeroTemplateEntityFrameworkCoreModule),
+        typeof(MeiLianApplicationModule),
+        typeof(MeiLianEntityFrameworkCoreModule),
         typeof(AbpTestBaseModule))]
-    public class AbpZeroTemplateTestModule : AbpModule
+    public class MeiLianTestModule : AbpModule
     {
-        public AbpZeroTemplateTestModule(AbpZeroTemplateEntityFrameworkCoreModule abpZeroTemplateEntityFrameworkCoreModule)
+        public MeiLianTestModule(MeiLianEntityFrameworkCoreModule MeiLianEntityFrameworkCoreModule)
         {
-            abpZeroTemplateEntityFrameworkCoreModule.SkipDbContextRegistration = true;
+            MeiLianEntityFrameworkCoreModule.SkipDbContextRegistration = true;
         }
 
         public override void PreInitialize()

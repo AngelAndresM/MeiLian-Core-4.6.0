@@ -9,7 +9,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize]
-    public class HomeController : AbpZeroTemplateControllerBase
+    public class HomeController : MeiLianControllerBase
     {
         public async Task<ActionResult> Index()
         {

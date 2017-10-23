@@ -15,20 +15,20 @@ namespace MeiLian.Tests.DependencyInjection
         {
             RegisterIdentity(iocManager);
 
-            var builder = new DbContextOptionsBuilder<AbpZeroTemplateDbContext>();
+            var builder = new DbContextOptionsBuilder<MeiLianDbContext>();
 
             var inMemorySqlite = new SqliteConnection("Data Source=:memory:");
             builder.UseSqlite(inMemorySqlite);
 
             iocManager.IocContainer.Register(
                 Component
-                    .For<DbContextOptions<AbpZeroTemplateDbContext>>()
+                    .For<DbContextOptions<MeiLianDbContext>>()
                     .Instance(builder.Options)
                     .LifestyleSingleton()
             );
 
             inMemorySqlite.Open();
-            new AbpZeroTemplateDbContext(builder.Options).Database.EnsureCreated();
+            new MeiLianDbContext(builder.Options).Database.EnsureCreated();
         }
 
         private static void RegisterIdentity(IIocManager iocManager)

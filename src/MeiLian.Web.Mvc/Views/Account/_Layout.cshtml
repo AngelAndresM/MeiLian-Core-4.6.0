@@ -2,11 +2,11 @@
 @using Abp.Configuration.Startup
 @using Abp.Timing
 @using Abp.Web.Security.AntiForgery
-@using MyCompanyName.AbpZeroTemplate.Timing
-@using MyCompanyName.AbpZeroTemplate.Url
-@using MyCompanyName.AbpZeroTemplate.Web.Resources
-@using MyCompanyName.AbpZeroTemplate.Web.Url
-@using CultureHelper = MyCompanyName.AbpZeroTemplate.Localization.CultureHelper
+@using MeiLian.Timing
+@using MeiLian.Url
+@using MeiLian.Web.Resources
+@using MeiLian.Web.Url
+@using CultureHelper = MeiLian.Localization.CultureHelper
 @inject ScriptPaths ScriptPaths
 @inject AppTimes AppTimes
 @inject IAbpAntiForgeryManager AbpAntiForgeryManager
@@ -21,15 +21,15 @@
 <html lang="en" @(CultureHelper.IsRtl ? "dir=\"rtl\"" : "")>
 <head>
     <meta charset="utf-8" />
-    <title>AbpZeroTemplate</title>
+    <title>MeiLian</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
     @* Fill these meta tags upon your project specification *@
-    <meta content="AbpZeroTemplate" name="description" />
-    <meta content="AbpZeroTemplate" name="keywords">
-    <meta content="AbpZeroTemplate" name="author" />
+    <meta content="MeiLian" name="description" />
+    <meta content="MeiLian" name="keywords">
+    <meta content="MeiLian" name="author" />
 
     <link rel="shortcut icon" href="~/favicon.ico" />
 
@@ -90,7 +90,7 @@
     <vc:account-languages></vc:account-languages>
 
     <div class="copyright">
-        @Clock.Now.Year © AbpZeroTemplate.
+        @Clock.Now.Year © MeiLian.
     </div>
 
     <environment names="Development">

@@ -8,7 +8,7 @@ using MeiLian.Web.Controllers;
 namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
-    public class InvoiceController : AbpZeroTemplateControllerBase
+    public class InvoiceController : MeiLianControllerBase
     {
         private readonly IInvoiceAppService _invoiceAppService;
 

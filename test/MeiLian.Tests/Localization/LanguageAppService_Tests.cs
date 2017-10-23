@@ -19,7 +19,7 @@ namespace MeiLian.Tests.Localization
 
         public LanguageAppService_Tests()
         {
-            if (AbpZeroTemplateConsts.MultiTenancyEnabled)
+            if (MeiLianConsts.MultiTenancyEnabled)
             {
                 LoginAsHostAdmin();
             }
@@ -115,7 +115,7 @@ namespace MeiLian.Tests.Localization
             await _languageAppService.UpdateLanguageText(
                 new UpdateLanguageTextInput
                 {
-                    SourceName = AbpZeroTemplateConsts.LocalizationSourceName,
+                    SourceName = MeiLianConsts.LocalizationSourceName,
                     LanguageName = "en",
                     Key = "Save",
                     Value = "save-new-value"
@@ -123,7 +123,7 @@ namespace MeiLian.Tests.Localization
 
             var newValue = Resolve<ILocalizationManager>()
                 .GetString(
-                    AbpZeroTemplateConsts.LocalizationSourceName,
+                    MeiLianConsts.LocalizationSourceName,
                     "Save",
                     CultureInfo.GetCultureInfo("en")
                 );

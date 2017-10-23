@@ -10,7 +10,7 @@ using MeiLian.Authorization.Users;
 
 namespace MeiLian.Authorization.Impersonation
 {
-    public class ImpersonationManager : AbpZeroTemplateDomainServiceBase, IImpersonationManager
+    public class ImpersonationManager : MeiLianDomainServiceBase, IImpersonationManager
     {
         public IAbpSession AbpSession { get; set; }
 

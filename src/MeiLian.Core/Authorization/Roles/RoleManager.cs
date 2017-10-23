@@ -66,7 +66,7 @@ namespace MeiLian.Authorization.Roles
 
         private string L(string name)
         {
-            return _localizationManager.GetString(AbpZeroTemplateConsts.LocalizationSourceName, name);
+            return _localizationManager.GetString(MeiLianConsts.LocalizationSourceName, name);
         }
     }
 }

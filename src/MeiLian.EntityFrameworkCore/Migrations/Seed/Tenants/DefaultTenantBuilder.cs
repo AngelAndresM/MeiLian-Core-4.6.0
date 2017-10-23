@@ -8,9 +8,9 @@ namespace MeiLian.Migrations.Seed.Tenants
 {
     public class DefaultTenantBuilder
     {
-        private readonly AbpZeroTemplateDbContext _context;
+        private readonly MeiLianDbContext _context;
 
-        public DefaultTenantBuilder(AbpZeroTemplateDbContext context)
+        public DefaultTenantBuilder(MeiLianDbContext context)
         {
             _context = context;
         }

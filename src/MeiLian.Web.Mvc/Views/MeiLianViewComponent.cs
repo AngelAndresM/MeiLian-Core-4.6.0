@@ -2,11 +2,11 @@ using Abp.AspNetCore.Mvc.ViewComponents;
 
 namespace MeiLian.Web.Views
 {
-    public abstract class AbpZeroTemplateViewComponent : AbpViewComponent
+    public abstract class MeiLianViewComponent : AbpViewComponent
     {
-        protected AbpZeroTemplateViewComponent()
+        protected MeiLianViewComponent()
         {
-            LocalizationSourceName = AbpZeroTemplateConsts.LocalizationSourceName;
+            LocalizationSourceName = MeiLianConsts.LocalizationSourceName;
         }
     }
 }

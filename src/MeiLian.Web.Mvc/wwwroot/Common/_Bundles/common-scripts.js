@@ -10,7 +10,7 @@ var app = app || {};
             //add your custom notification data types here...
 
             /* Example:
-            abp.notifications.messageFormatters['MyCompanyName.AbpZeroTemplate.MyNotificationDataType'] = function(userNotification) {
+            abp.notifications.messageFormatters['MeiLian.MyNotificationDataType'] = function(userNotification) {
                 return ...; //format and return message here
             };
             */
@@ -67,7 +67,7 @@ var app = app || {};
                 });
 
                 //Desktop notification
-                Push.create("AbpZeroTemplate", {
+                Push.create("MeiLian", {
                     body: format(userNotification).text,
                     icon: abp.appPath + 'Common/Images/app-logo-small.png',
                     timeout: 6000,
@@ -143,7 +143,7 @@ var app = app || {};
 var app = app || {};
 (function () {
 
-    var appLocalizationSource = abp.localization.getSource('AbpZeroTemplate');
+    var appLocalizationSource = abp.localization.getSource('MeiLian');
     app.localize = function () {
         return appLocalizationSource.apply(this, arguments);
     };

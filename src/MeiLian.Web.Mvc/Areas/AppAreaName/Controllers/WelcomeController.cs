@@ -6,7 +6,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize]
-    public class WelcomeController : AbpZeroTemplateControllerBase
+    public class WelcomeController : MeiLianControllerBase
     {
         public ActionResult Index()
         {

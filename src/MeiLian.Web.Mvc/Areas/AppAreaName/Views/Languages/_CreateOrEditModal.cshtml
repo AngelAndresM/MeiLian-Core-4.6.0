@@ -1,6 +1,6 @@
 ﻿@using Abp.Application.Services.Dto
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Common.Modals
-@using MyCompanyName.AbpZeroTemplate.Web.Areas.AppAreaName.Models.Languages
+@using MeiLian.Web.Areas.AppAreaName.Models.Common.Modals
+@using MeiLian.Web.Areas.AppAreaName.Models.Languages
 @model CreateOrEditLanguageModalViewModel
 
 @Html.Partial("~/Areas/AppAreaName/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.IsEditMode ? (L("EditLanguage") + ": " + Model.Language.Name) : L("CreateNewLanguage")))

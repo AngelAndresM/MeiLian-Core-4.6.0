@@ -3,14 +3,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MeiLian.EntityFrameworkCore
 {
-    public static class AbpZeroTemplateDbContextConfigurer
+    public static class MeiLianDbContextConfigurer
     {
-        public static void Configure(DbContextOptionsBuilder<AbpZeroTemplateDbContext> builder, string connectionString)
+        public static void Configure(DbContextOptionsBuilder<MeiLianDbContext> builder, string connectionString)
         {
             builder.UseSqlServer(connectionString);
         }
 
-        public static void Configure(DbContextOptionsBuilder<AbpZeroTemplateDbContext> builder, DbConnection connection)
+        public static void Configure(DbContextOptionsBuilder<MeiLianDbContext> builder, DbConnection connection)
         {
             builder.UseSqlServer(connection);
         }

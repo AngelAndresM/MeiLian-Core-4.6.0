@@ -14,7 +14,7 @@ using Newtonsoft.Json.Linq;
 
 namespace MeiLian.Web.Controllers
 {
-    public class ChatControllerBase : AbpZeroTemplateControllerBase
+    public class ChatControllerBase : MeiLianControllerBase
     {
         protected readonly IBinaryObjectManager BinaryObjectManager;
         protected readonly IChatAppService ChatAppService;

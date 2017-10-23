@@ -13,7 +13,7 @@ using MeiLian.MultiTenancy.Payments;
 
 namespace MeiLian.Migrations
 {
-    [DbContext(typeof(AbpZeroTemplateDbContext))]
+    [DbContext(typeof(MeiLianDbContext))]
     [Migration("20170914084815_Invoice_Changes")]
     partial class Invoice_Changes
     {

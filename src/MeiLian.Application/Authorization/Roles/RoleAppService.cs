@@ -18,7 +18,7 @@ namespace MeiLian.Authorization.Roles
     /// Application service that is used by 'role management' page.
     /// </summary>
     [AbpAuthorize(AppPermissions.Pages_Administration_Roles)]
-    public class RoleAppService : AbpZeroTemplateAppServiceBase, IRoleAppService
+    public class RoleAppService : MeiLianAppServiceBase, IRoleAppService
     {
         private readonly RoleManager _roleManager;
 

@@ -4,10 +4,10 @@ namespace MeiLian.Tests.TestDatas
 {
     public class TestDataBuilder
     {
-        private readonly AbpZeroTemplateDbContext _context;
+        private readonly MeiLianDbContext _context;
         private readonly int _tenantId;
 
-        public TestDataBuilder(AbpZeroTemplateDbContext context, int tenantId)
+        public TestDataBuilder(MeiLianDbContext context, int tenantId)
         {
             _context = context;
             _tenantId = tenantId;

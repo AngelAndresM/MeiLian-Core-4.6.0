@@ -11,14 +11,14 @@ using MeiLian.Web.Areas.AppAreaName.Startup;
 namespace MeiLian.Web.Startup
 {
     [DependsOn(
-        typeof(AbpZeroTemplateWebCoreModule)
+        typeof(MeiLianWebCoreModule)
     )]
-    public class AbpZeroTemplateWebMvcModule : AbpModule
+    public class MeiLianWebMvcModule : AbpModule
     {
         private readonly IHostingEnvironment _env;
         private readonly IConfigurationRoot _appConfiguration;
 
-        public AbpZeroTemplateWebMvcModule(IHostingEnvironment env)
+        public MeiLianWebMvcModule(IHostingEnvironment env)
         {
             _env = env;
             _appConfiguration = env.GetAppConfiguration();
@@ -33,7 +33,7 @@ namespace MeiLian.Web.Startup
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateWebMvcModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(MeiLianWebMvcModule).GetAssembly());
         }
 
         public override void PostInitialize()

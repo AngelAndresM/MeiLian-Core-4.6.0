@@ -49,7 +49,7 @@ using MeiLian.Web.Views.Shared.Components.TenantChange;
 
 namespace MeiLian.Web.Controllers
 {
-    public class AccountController : AbpZeroTemplateControllerBase
+    public class AccountController : MeiLianControllerBase
     {
         private readonly UserManager _userManager;
         private readonly TenantManager _tenantManager;

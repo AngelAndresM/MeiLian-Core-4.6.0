@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore;
 namespace MeiLian.Organizations
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_OrganizationUnits)]
-    public class OrganizationUnitAppService : AbpZeroTemplateAppServiceBase, IOrganizationUnitAppService
+    public class OrganizationUnitAppService : MeiLianAppServiceBase, IOrganizationUnitAppService
     {
         private readonly OrganizationUnitManager _organizationUnitManager;
         private readonly IRepository<OrganizationUnit, long> _organizationUnitRepository;

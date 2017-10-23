@@ -15,7 +15,7 @@ using MeiLian.Web.Controllers;
 
 namespace MeiLian.Web.Public.Controllers
 {
-    public class AccountController : AbpZeroTemplateControllerBase
+    public class AccountController : MeiLianControllerBase
     {
         private readonly UserManager _userManager;
         private readonly SignInManager _signInManager;

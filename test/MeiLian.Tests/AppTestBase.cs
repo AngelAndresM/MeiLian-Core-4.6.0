@@ -20,9 +20,9 @@ namespace MeiLian.Tests
     /// This is base class for all our test classes.
     /// It prepares ABP system, modules and a fake, in-memory database.
     /// Seeds database with initial data.
-    /// Provides methods to easily work with <see cref="AbpZeroTemplateDbContext"/>.
+    /// Provides methods to easily work with <see cref="MeiLianDbContext"/>.
     /// </summary>
-    public abstract class AppTestBase : AbpIntegratedTestBase<AbpZeroTemplateTestModule>
+    public abstract class AppTestBase : AbpIntegratedTestBase<MeiLianTestModule>
     {
         protected AppTestBase()
         {
@@ -32,7 +32,7 @@ namespace MeiLian.Tests
 
         private void SeedTestData()
         {
-            void NormalizeDbContext(AbpZeroTemplateDbContext context)
+            void NormalizeDbContext(MeiLianDbContext context)
             {
                 context.EntityChangeEventHelper = NullEntityChangeEventHelper.Instance;
                 context.EventBus = NullEventBus.Instance;
@@ -55,31 +55,31 @@ namespace MeiLian.Tests
             return new DisposeAction(() => AbpSession.TenantId = previousTenantId);
         }
 
-        protected void UsingDbContext(Action<AbpZeroTemplateDbContext> action)
+        protected void UsingDbContext(Action<MeiLianDbContext> action)
         {
             UsingDbContext(AbpSession.TenantId, action);
         }
 
-        protected Task UsingDbContextAsync(Func<AbpZeroTemplateDbContext, Task> action)
+        protected Task UsingDbContextAsync(Func<MeiLianDbContext, Task> action)
         {
             return UsingDbContextAsync(AbpSession.TenantId, action);
         }
 
-        protected T UsingDbContext<T>(Func<AbpZeroTemplateDbContext, T> func)
+        protected T UsingDbContext<T>(Func<MeiLianDbContext, T> func)
         {
             return UsingDbContext(AbpSession.TenantId, func);
         }
 
-        protected Task<T> UsingDbContextAsync<T>(Func<AbpZeroTemplateDbContext, Task<T>> func)
+        protected Task<T> UsingDbContextAsync<T>(Func<MeiLianDbContext, Task<T>> func)
         {
             return UsingDbContextAsync(AbpSession.TenantId, func);
         }
 
-        protected void UsingDbContext(int? tenantId, Action<AbpZeroTemplateDbContext> action)
+        protected void UsingDbContext(int? tenantId, Action<MeiLianDbContext> action)
         {
             using (UsingTenantId(tenantId))
             {
-                using (var context = LocalIocManager.Resolve<AbpZeroTemplateDbContext>())
+                using (var context = LocalIocManager.Resolve<MeiLianDbContext>())
                 {
                     action(context);
                     context.SaveChanges();
@@ -87,11 +87,11 @@ namespace MeiLian.Tests
             }
         }
 
-        protected async Task UsingDbContextAsync(int? tenantId, Func<AbpZeroTemplateDbContext, Task> action)
+        protected async Task UsingDbContextAsync(int? tenantId, Func<MeiLianDbContext, Task> action)
         {
             using (UsingTenantId(tenantId))
             {
-                using (var context = LocalIocManager.Resolve<AbpZeroTemplateDbContext>())
+                using (var context = LocalIocManager.Resolve<MeiLianDbContext>())
                 {
                     await action(context);
                     await context.SaveChangesAsync();
@@ -99,13 +99,13 @@ namespace MeiLian.Tests
             }
         }
 
-        protected T UsingDbContext<T>(int? tenantId, Func<AbpZeroTemplateDbContext, T> func)
+        protected T UsingDbContext<T>(int? tenantId, Func<MeiLianDbContext, T> func)
         {
             T result;
 
             using (UsingTenantId(tenantId))
             {
-                using (var context = LocalIocManager.Resolve<AbpZeroTemplateDbContext>())
+                using (var context = LocalIocManager.Resolve<MeiLianDbContext>())
                 {
                     result = func(context);
                     context.SaveChanges();
@@ -115,13 +115,13 @@ namespace MeiLian.Tests
             return result;
         }
 
-        protected async Task<T> UsingDbContextAsync<T>(int? tenantId, Func<AbpZeroTemplateDbContext, Task<T>> func)
+        protected async Task<T> UsingDbContextAsync<T>(int? tenantId, Func<MeiLianDbContext, Task<T>> func)
         {
             T result;
 
             using (UsingTenantId(tenantId))
             {
-                using (var context = LocalIocManager.Resolve<AbpZeroTemplateDbContext>())
+                using (var context = LocalIocManager.Resolve<MeiLianDbContext>())
                 {
                     result = await func(context);
                     await context.SaveChangesAsync();

@@ -14,7 +14,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize]
-    public class ProfileController : AbpZeroTemplateControllerBase
+    public class ProfileController : MeiLianControllerBase
     {
         private readonly IProfileAppService _profileAppService;
         private readonly ITimingAppService _timingAppService;

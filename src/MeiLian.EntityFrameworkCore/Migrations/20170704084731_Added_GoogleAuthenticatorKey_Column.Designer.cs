@@ -13,7 +13,7 @@ using MeiLian.MultiTenancy.Payments;
 
 namespace MeiLian.Migrations
 {
-    [DbContext(typeof(AbpZeroTemplateDbContext))]
+    [DbContext(typeof(MeiLianDbContext))]
     [Migration("20170704084731_Added_GoogleAuthenticatorKey_Column")]
     partial class Added_GoogleAuthenticatorKey_Column
     {

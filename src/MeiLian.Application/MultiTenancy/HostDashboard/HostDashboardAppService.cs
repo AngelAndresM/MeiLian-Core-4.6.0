@@ -15,7 +15,7 @@ namespace MeiLian.MultiTenancy.HostDashboard
 {
     [DisableAuditing]
     [AbpAuthorize(AppPermissions.Pages_Administration_Host_Dashboard)]
-    public class HostDashboardAppService : AbpZeroTemplateAppServiceBase, IHostDashboardAppService
+    public class HostDashboardAppService : MeiLianAppServiceBase, IHostDashboardAppService
     {
         private const int SubscriptionEndAlertDayCount = 30;
         private const int MaxExpiringTenantsShownCount = 10;

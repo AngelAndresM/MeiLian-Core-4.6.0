@@ -18,7 +18,7 @@ using MeiLian.Notifications;
 
 namespace MeiLian.Authorization.Users
 {
-    public class UserRegistrationManager : AbpZeroTemplateDomainServiceBase
+    public class UserRegistrationManager : MeiLianDomainServiceBase
     {
         public IAbpSession AbpSession { get; set; }
 

@@ -15,10 +15,10 @@ namespace MeiLian.Tests.TestDatas
      */
     public class TestOrganizationUnitsBuilder
     {
-        private readonly AbpZeroTemplateDbContext _context;
+        private readonly MeiLianDbContext _context;
         private readonly int _tenantId;
 
-        public TestOrganizationUnitsBuilder(AbpZeroTemplateDbContext context, int tenantId)
+        public TestOrganizationUnitsBuilder(MeiLianDbContext context, int tenantId)
         {
             _context = context;
             _tenantId = tenantId;

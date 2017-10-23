@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MeiLian.Web.Controllers
 {
-    public class HomeController : AbpZeroTemplateControllerBase
+    public class HomeController : MeiLianControllerBase
     {
         [DisableAuditing]
         public IActionResult Index()

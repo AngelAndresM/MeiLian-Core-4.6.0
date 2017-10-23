@@ -18,7 +18,7 @@ using MeiLian.Web.Helpers;
 namespace MeiLian.Web.Controllers
 {
     [AbpMvcAuthorize]
-    public class TenantCustomizationController : AbpZeroTemplateControllerBase
+    public class TenantCustomizationController : MeiLianControllerBase
     {
         private readonly TenantManager _tenantManager;
         private readonly IBinaryObjectManager _binaryObjectManager;

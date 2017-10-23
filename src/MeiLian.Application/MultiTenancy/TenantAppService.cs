@@ -19,7 +19,7 @@ using MeiLian.Url;
 namespace MeiLian.MultiTenancy
 {
     [AbpAuthorize(AppPermissions.Pages_Tenants)]
-    public class TenantAppService : AbpZeroTemplateAppServiceBase, ITenantAppService
+    public class TenantAppService : MeiLianAppServiceBase, ITenantAppService
     {
         public IAppUrlService AppUrlService { get; set; }
 

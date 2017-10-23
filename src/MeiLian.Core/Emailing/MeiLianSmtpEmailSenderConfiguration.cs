@@ -5,9 +5,9 @@ using Abp.Runtime.Security;
 
 namespace MeiLian.Emailing
 {
-    public class AbpZeroTemplateSmtpEmailSenderConfiguration : SmtpEmailSenderConfiguration
+    public class MeiLianSmtpEmailSenderConfiguration : SmtpEmailSenderConfiguration
     {
-        public AbpZeroTemplateSmtpEmailSenderConfiguration(ISettingManager settingManager) : base(settingManager)
+        public MeiLianSmtpEmailSenderConfiguration(ISettingManager settingManager) : base(settingManager)
         {
 
         }

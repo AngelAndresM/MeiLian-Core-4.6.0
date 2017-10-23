@@ -6,7 +6,7 @@ using MeiLian.Dto;
 
 namespace MeiLian.Web.Controllers
 {
-    public class FileController : AbpZeroTemplateControllerBase
+    public class FileController : MeiLianControllerBase
     {
         private readonly IAppFolders _appFolders;
 

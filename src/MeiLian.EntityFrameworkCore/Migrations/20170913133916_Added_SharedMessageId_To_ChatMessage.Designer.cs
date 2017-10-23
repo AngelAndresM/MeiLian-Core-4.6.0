@@ -17,7 +17,7 @@ using System;
 
 namespace MeiLian.Migrations
 {
-    [DbContext(typeof(AbpZeroTemplateDbContext))]
+    [DbContext(typeof(MeiLianDbContext))]
     [Migration("20170913133916_Added_SharedMessageId_To_ChatMessage")]
     partial class Added_SharedMessageId_To_ChatMessage
     {

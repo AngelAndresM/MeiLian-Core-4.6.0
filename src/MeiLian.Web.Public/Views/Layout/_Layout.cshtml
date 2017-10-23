@@ -1,8 +1,8 @@
 ﻿@using System.Threading.Tasks
 @using Abp.Web.Security.AntiForgery
-@using MyCompanyName.AbpZeroTemplate.Timing
-@using MyCompanyName.AbpZeroTemplate.Web.Public.Views.Shared.Components.Header
-@using CultureHelper = MyCompanyName.AbpZeroTemplate.Localization.CultureHelper
+@using MeiLian.Timing
+@using MeiLian.Web.Public.Views.Shared.Components.Header
+@using CultureHelper = MeiLian.Localization.CultureHelper
 @inject AppTimes AppTimes
 @inject IAbpAntiForgeryManager AbpAntiForgeryManager
 @{
@@ -13,15 +13,15 @@
 <html lang="en" @(CultureHelper.IsRtl ? "dir=\"rtl\"" : "")>
 <head>
     <meta charset="utf-8">
-    <title>AbpZeroTemplate</title>
+    <title>MeiLian</title>
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     @* Fill these meta tags upon your project specification *@
-    <meta content="AbpZeroTemplate" name="description">
-    <meta content="AbpZeroTemplate" name="keywords">
-    <meta content="AbpZeroTemplate" name="author">
+    <meta content="MeiLian" name="description">
+    <meta content="MeiLian" name="keywords">
+    <meta content="MeiLian" name="author">
 
     @* You can enable and fill these lines according to documentation on http://ogp.me/
         <meta property="og:site_name" content="-CUSTOMER VALUE-">

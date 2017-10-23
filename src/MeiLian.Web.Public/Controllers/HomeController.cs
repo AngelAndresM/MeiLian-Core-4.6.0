@@ -3,7 +3,7 @@ using MeiLian.Web.Controllers;
 
 namespace MeiLian.Web.Public.Controllers
 {
-    public class HomeController : AbpZeroTemplateControllerBase
+    public class HomeController : MeiLianControllerBase
     {
         public ActionResult Index()
         {

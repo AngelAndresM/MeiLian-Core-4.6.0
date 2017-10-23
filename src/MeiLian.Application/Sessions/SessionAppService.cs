@@ -13,7 +13,7 @@ using MeiLian.Sessions.Dto;
 
 namespace MeiLian.Sessions
 {
-    public class SessionAppService : AbpZeroTemplateAppServiceBase, ISessionAppService
+    public class SessionAppService : MeiLianAppServiceBase, ISessionAppService
     {
         [DisableAuditing]
         public async Task<GetCurrentLoginInformationsOutput> GetCurrentLoginInformations()

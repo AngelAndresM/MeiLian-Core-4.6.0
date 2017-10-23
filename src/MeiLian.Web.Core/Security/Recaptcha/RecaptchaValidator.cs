@@ -9,7 +9,7 @@ using PaulMiami.AspNetCore.Mvc.Recaptcha;
 
 namespace MeiLian.Web.Security.Recaptcha
 {
-    public class RecaptchaValidator : AbpZeroTemplateServiceBase, IRecaptchaValidator, ITransientDependency
+    public class RecaptchaValidator : MeiLianServiceBase, IRecaptchaValidator, ITransientDependency
     {
         public const string RecaptchaResponseKey = "g-recaptcha-response";
 

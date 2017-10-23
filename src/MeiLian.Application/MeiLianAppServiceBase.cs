@@ -14,15 +14,15 @@ namespace MeiLian
     /// <summary>
     /// Derive your application services from this class.
     /// </summary>
-    public abstract class AbpZeroTemplateAppServiceBase : ApplicationService
+    public abstract class MeiLianAppServiceBase : ApplicationService
     {
         public TenantManager TenantManager { get; set; }
 
         public UserManager UserManager { get; set; }
 
-        protected AbpZeroTemplateAppServiceBase()
+        protected MeiLianAppServiceBase()
         {
-            LocalizationSourceName = AbpZeroTemplateConsts.LocalizationSourceName;
+            LocalizationSourceName = MeiLianConsts.LocalizationSourceName;
         }
 
         protected virtual async Task<User> GetCurrentUserAsync()

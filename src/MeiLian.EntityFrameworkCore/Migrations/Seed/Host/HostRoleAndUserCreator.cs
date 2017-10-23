@@ -16,9 +16,9 @@ namespace MeiLian.Migrations.Seed.Host
 {
     public class HostRoleAndUserCreator
     {
-        private readonly AbpZeroTemplateDbContext _context;
+        private readonly MeiLianDbContext _context;
 
-        public HostRoleAndUserCreator(AbpZeroTemplateDbContext context)
+        public HostRoleAndUserCreator(MeiLianDbContext context)
         {
             _context = context;
         }

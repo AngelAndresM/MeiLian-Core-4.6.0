@@ -12,7 +12,7 @@ namespace MeiLian.Tests.Configuration
         public TestAppConfigurationAccessor()
         {
             Configuration = AppConfigurations.Get(
-                typeof(AbpZeroTemplateTestModule).GetAssembly().GetDirectoryPathOrNull()
+                typeof(MeiLianTestModule).GetAssembly().GetDirectoryPathOrNull()
             );
         }
     }

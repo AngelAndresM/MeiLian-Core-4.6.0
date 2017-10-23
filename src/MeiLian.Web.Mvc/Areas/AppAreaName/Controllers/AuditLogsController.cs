@@ -9,7 +9,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
     [Area("AppAreaName")]
     [DisableAuditing]
     [AbpMvcAuthorize(AppPermissions.Pages_Administration_AuditLogs)]
-    public class AuditLogsController : AbpZeroTemplateControllerBase
+    public class AuditLogsController : MeiLianControllerBase
     {
         public ActionResult Index()
         {

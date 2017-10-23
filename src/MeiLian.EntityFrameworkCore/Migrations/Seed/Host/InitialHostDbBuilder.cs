@@ -4,9 +4,9 @@ namespace MeiLian.Migrations.Seed.Host
 {
     public class InitialHostDbBuilder
     {
-        private readonly AbpZeroTemplateDbContext _context;
+        private readonly MeiLianDbContext _context;
 
-        public InitialHostDbBuilder(AbpZeroTemplateDbContext context)
+        public InitialHostDbBuilder(MeiLianDbContext context)
         {
             _context = context;
         }

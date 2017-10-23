@@ -5,9 +5,9 @@ using MeiLian.EntityFrameworkCore.Repositories;
 
 namespace MeiLian.MultiTenancy.Payments
 {
-    public class SubscriptionPaymentRepository : AbpZeroTemplateRepositoryBase<SubscriptionPayment, long>, ISubscriptionPaymentRepository
+    public class SubscriptionPaymentRepository : MeiLianRepositoryBase<SubscriptionPayment, long>, ISubscriptionPaymentRepository
     {
-        public SubscriptionPaymentRepository(IDbContextProvider<AbpZeroTemplateDbContext> dbContextProvider)
+        public SubscriptionPaymentRepository(IDbContextProvider<MeiLianDbContext> dbContextProvider)
             : base(dbContextProvider)
         {
         }

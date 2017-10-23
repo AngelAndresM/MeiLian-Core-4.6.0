@@ -13,7 +13,7 @@ using MeiLian.MultiTenancy.Payments;
 
 namespace MeiLian.Migrations
 {
-    [DbContext(typeof(AbpZeroTemplateDbContext))]
+    [DbContext(typeof(MeiLianDbContext))]
     [Migration("20170714081027_Added_Relation_Between_Edition_And_SubscriptionPayment")]
     partial class Added_Relation_Between_Edition_And_SubscriptionPayment
     {

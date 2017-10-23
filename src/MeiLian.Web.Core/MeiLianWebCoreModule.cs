@@ -26,8 +26,8 @@ using Abp.Web.SignalR;
 namespace MeiLian.Web
 {
     [DependsOn(
-        typeof(AbpZeroTemplateApplicationModule),
-        typeof(AbpZeroTemplateEntityFrameworkCoreModule),
+        typeof(MeiLianApplicationModule),
+        typeof(MeiLianEntityFrameworkCoreModule),
         typeof(AbpAspNetCoreModule),
 #if FEATURE_SIGNALR
         typeof(AbpWebSignalRModule),
@@ -35,12 +35,12 @@ namespace MeiLian.Web
         typeof(AbpRedisCacheModule), //AbpRedisCacheModule dependency (and Abp.RedisCache nuget package) can be removed if not using Redis cache
         typeof(AbpHangfireAspNetCoreModule) //AbpHangfireModule dependency (and Abp.Hangfire.AspNetCore nuget package) can be removed if not using Hangfire
     )] 
-    public class AbpZeroTemplateWebCoreModule : AbpModule
+    public class MeiLianWebCoreModule : AbpModule
     {
         private readonly IHostingEnvironment _env;
         private readonly IConfigurationRoot _appConfiguration;
 
-        public AbpZeroTemplateWebCoreModule(IHostingEnvironment env)
+        public MeiLianWebCoreModule(IHostingEnvironment env)
         {
             _env = env;
             _appConfiguration = env.GetAppConfiguration();
@@ -50,7 +50,7 @@ namespace MeiLian.Web
         {
             //Set default connection string
             Configuration.DefaultNameOrConnectionString = _appConfiguration.GetConnectionString(
-                AbpZeroTemplateConsts.ConnectionStringName
+                MeiLianConsts.ConnectionStringName
             );
 
             //Use database for language management
@@ -58,7 +58,7 @@ namespace MeiLian.Web
 
             Configuration.Modules.AbpAspNetCore()
                 .CreateControllersForAppServices(
-                    typeof(AbpZeroTemplateApplicationModule).GetAssembly()
+                    typeof(MeiLianApplicationModule).GetAssembly()
                 );
 
             Configuration.Caching.Configure(TwoFactorCodeCacheItem.CacheName, cache =>
@@ -99,7 +99,7 @@ namespace MeiLian.Web
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateWebCoreModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(MeiLianWebCoreModule).GetAssembly());
         }
 
         public override void PostInitialize()
@@ -118,7 +118,7 @@ namespace MeiLian.Web
 #if NET461
             if (_env.IsDevelopment())
             {
-                var currentAssemblyDirectoryPath = typeof(AbpZeroTemplateWebCoreModule).GetAssembly().GetDirectoryPathOrNull();
+                var currentAssemblyDirectoryPath = typeof(MeiLianWebCoreModule).GetAssembly().GetDirectoryPathOrNull();
                 if (currentAssemblyDirectoryPath != null)
                 {
                     appFolders.WebLogsFolder = Path.Combine(currentAssemblyDirectoryPath, @"App_Data\Logs");

@@ -17,7 +17,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Administration_Languages)]
-    public class LanguagesController : AbpZeroTemplateControllerBase
+    public class LanguagesController : MeiLianControllerBase
     {
         private readonly ILanguageAppService _languageAppService;
         private readonly ILanguageManager _languageManager;
@@ -63,7 +63,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
             //Normalize arguments
             if (sourceName.IsNullOrEmpty())
             {
-                sourceName = AbpZeroTemplateConsts.LocalizationSourceName;
+                sourceName = MeiLianConsts.LocalizationSourceName;
             }
 
             if (baseLanguageName.IsNullOrEmpty())

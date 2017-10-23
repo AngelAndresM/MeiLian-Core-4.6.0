@@ -4,7 +4,7 @@ using MeiLian.Identity;
 
 namespace MeiLian.Web.Controllers
 {
-    public class HomeController : AbpZeroTemplateControllerBase
+    public class HomeController : MeiLianControllerBase
     {
         private readonly SignInManager _signInManager;
 

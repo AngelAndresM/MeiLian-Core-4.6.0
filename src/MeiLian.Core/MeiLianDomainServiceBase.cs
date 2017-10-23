@@ -2,13 +2,13 @@ using Abp.Domain.Services;
 
 namespace MeiLian
 {
-    public abstract class AbpZeroTemplateDomainServiceBase : DomainService
+    public abstract class MeiLianDomainServiceBase : DomainService
     {
         /* Add your common members for all your domain services. */
 
-        protected AbpZeroTemplateDomainServiceBase()
+        protected MeiLianDomainServiceBase()
         {
-            LocalizationSourceName = AbpZeroTemplateConsts.LocalizationSourceName;
+            LocalizationSourceName = MeiLianConsts.LocalizationSourceName;
         }
     }
 }

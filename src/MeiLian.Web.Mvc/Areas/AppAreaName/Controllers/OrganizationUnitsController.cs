@@ -13,7 +13,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Administration_OrganizationUnits)]
-    public class OrganizationUnitsController : AbpZeroTemplateControllerBase
+    public class OrganizationUnitsController : MeiLianControllerBase
     {
         private readonly IRepository<OrganizationUnit, long> _organizationUnitRepository;
 

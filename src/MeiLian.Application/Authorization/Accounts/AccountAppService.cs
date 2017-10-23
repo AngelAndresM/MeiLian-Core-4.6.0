@@ -18,7 +18,7 @@ using MeiLian.Url;
 
 namespace MeiLian.Authorization.Accounts
 {
-    public class AccountAppService : AbpZeroTemplateAppServiceBase, IAccountAppService
+    public class AccountAppService : MeiLianAppServiceBase, IAccountAppService
     {
         public IAppUrlService AppUrlService { get; set; }
 

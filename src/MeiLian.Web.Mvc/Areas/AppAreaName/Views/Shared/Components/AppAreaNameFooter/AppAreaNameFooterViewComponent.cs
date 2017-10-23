@@ -6,7 +6,7 @@ using MeiLian.Web.Views;
 
 namespace MeiLian.Web.Areas.AppAreaName.Views.Shared.Components.AppAreaNameFooter
 {
-    public class AppAreaNameFooterViewComponent : AbpZeroTemplateViewComponent
+    public class AppAreaNameFooterViewComponent : MeiLianViewComponent
     {
         private readonly IPerRequestSessionCache _sessionCache;
 

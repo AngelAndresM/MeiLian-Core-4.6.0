@@ -15,7 +15,7 @@ using MeiLian.Friendships.Cache;
 namespace MeiLian.Chat
 {
     [AbpAuthorize]
-    public class ChatMessageManager : AbpZeroTemplateDomainServiceBase, IChatMessageManager
+    public class ChatMessageManager : MeiLianDomainServiceBase, IChatMessageManager
     {
         private readonly IFriendshipManager _friendshipManager;
         private readonly IChatCommunicator _chatCommunicator;

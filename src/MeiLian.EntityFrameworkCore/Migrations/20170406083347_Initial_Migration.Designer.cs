@@ -12,7 +12,7 @@ using MeiLian.Friendships;
 
 namespace MeiLian.Migrations
 {
-    [DbContext(typeof(AbpZeroTemplateDbContext))]
+    [DbContext(typeof(MeiLianDbContext))]
     [Migration("20170406083347_Initial_Migration")]
     partial class Initial_Migration
     {

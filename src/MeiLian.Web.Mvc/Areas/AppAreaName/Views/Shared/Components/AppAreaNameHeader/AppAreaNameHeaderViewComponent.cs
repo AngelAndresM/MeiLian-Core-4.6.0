@@ -12,7 +12,7 @@ using MeiLian.Web.Views;
 
 namespace MeiLian.Web.Areas.AppAreaName.Views.Shared.Components.AppAreaNameHeader
 {
-    public class AppAreaNameHeaderViewComponent : AbpZeroTemplateViewComponent
+    public class AppAreaNameHeaderViewComponent : MeiLianViewComponent
     {
         private readonly ILanguageManager _languageManager;
         private readonly IMultiTenancyConfig _multiTenancyConfig;

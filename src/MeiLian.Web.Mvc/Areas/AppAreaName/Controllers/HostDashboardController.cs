@@ -8,7 +8,7 @@ namespace MeiLian.Web.Areas.AppAreaName.Controllers
 {
     [Area("AppAreaName")]
     [AbpMvcAuthorize(AppPermissions.Pages_Administration_Host_Dashboard)]
-    public class HostDashboardController : AbpZeroTemplateControllerBase
+    public class HostDashboardController : MeiLianControllerBase
     {
         private const int DashboardOnLoadReportDayCount = 7;
 

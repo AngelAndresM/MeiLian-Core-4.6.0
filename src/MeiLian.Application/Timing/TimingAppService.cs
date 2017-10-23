@@ -8,7 +8,7 @@ using MeiLian.Timing.Dto;
 
 namespace MeiLian.Timing
 {
-    public class TimingAppService : AbpZeroTemplateAppServiceBase, ITimingAppService
+    public class TimingAppService : MeiLianAppServiceBase, ITimingAppService
     {
         private readonly ITimeZoneService _timeZoneService;
 

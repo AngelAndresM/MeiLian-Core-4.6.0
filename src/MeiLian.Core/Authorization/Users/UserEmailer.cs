@@ -21,7 +21,7 @@ namespace MeiLian.Authorization.Users
     /// <summary>
     /// Used to send email to users.
     /// </summary>
-    public class UserEmailer : AbpZeroTemplateServiceBase, IUserEmailer, ITransientDependency
+    public class UserEmailer : MeiLianServiceBase, IUserEmailer, ITransientDependency
     {
         private readonly IEmailTemplateProvider _emailTemplateProvider;
         private readonly IEmailSender _emailSender;

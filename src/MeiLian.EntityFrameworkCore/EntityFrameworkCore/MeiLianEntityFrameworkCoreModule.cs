@@ -9,10 +9,10 @@ namespace MeiLian.EntityFrameworkCore
 {
     [DependsOn(
         typeof(AbpZeroCoreEntityFrameworkCoreModule),
-        typeof(AbpZeroTemplateCoreModule),
+        typeof(MeiLianCoreModule),
         typeof(AbpZeroCoreIdentityServerEntityFrameworkCoreModule)
         )]
-    public class AbpZeroTemplateEntityFrameworkCoreModule : AbpModule
+    public class MeiLianEntityFrameworkCoreModule : AbpModule
     {
         /* Used it tests to skip dbcontext registration, in order to use in-memory database of EF Core */
         public bool SkipDbContextRegistration { get; set; }
@@ -23,15 +23,15 @@ namespace MeiLian.EntityFrameworkCore
         {
             if (!SkipDbContextRegistration)
             {
-                Configuration.Modules.AbpEfCore().AddDbContext<AbpZeroTemplateDbContext>(options =>
+                Configuration.Modules.AbpEfCore().AddDbContext<MeiLianDbContext>(options =>
                 {
                     if (options.ExistingConnection != null)
                     {
-                        AbpZeroTemplateDbContextConfigurer.Configure(options.DbContextOptions, options.ExistingConnection);
+                        MeiLianDbContextConfigurer.Configure(options.DbContextOptions, options.ExistingConnection);
                     }
                     else
                     {
-                        AbpZeroTemplateDbContextConfigurer.Configure(options.DbContextOptions, options.ConnectionString);
+                        MeiLianDbContextConfigurer.Configure(options.DbContextOptions, options.ConnectionString);
                     }
                 });
             }
@@ -39,7 +39,7 @@ namespace MeiLian.EntityFrameworkCore
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateEntityFrameworkCoreModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(MeiLianEntityFrameworkCoreModule).GetAssembly());
         }
 
         public override void PostInitialize()
