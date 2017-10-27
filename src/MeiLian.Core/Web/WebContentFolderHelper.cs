@@ -20,7 +20,7 @@ namespace MeiLian.Web
             }
 
             var directoryInfo = new DirectoryInfo(coreAssemblyDirectoryPath);
-            while (!DirectoryContains(directoryInfo.FullName, "MeiLian.sln"))
+            while (!DirectoryContains(directoryInfo.FullName, "MeiLian-Core.sln"))
             {
                 if (directoryInfo.Parent == null)
                 {
